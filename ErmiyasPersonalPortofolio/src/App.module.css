@@ -1,0 +1,19 @@
+/* src/App.module.css */
+
+
+/* adding colors  separately*/
+
+:root{
+
+    /* colorsss */
+
+    --color-text: white;
+    --color-primary: lightBlue;
+    --color-secondary: darkBlue;
+    --color-dark: blue;
+    --color-bg: lightpink;
+
+    /* adding variable for the web font*/
+    --font-robot:"Roboto";
+}
+
