@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './App.module.css';
+import styles from "./App.module.css";
 
 function App() {
   return (
-    <>
-    Hello World
-    </>
+    <div>
+      className= {styles.App} Hello World
+    </div>
   )
 }
 

@@ -1,0 +1,16 @@
+
+/* adding colors  separatly*/
+
+:root{
+
+    /* colorsss */
+
+    --color-text: white;
+    --color-primary: lightBlue;
+    --color-secondary: darkBlue;
+    --color-dark: blue;
+    --color-bg: rgb(202, 189, 209);
+
+    /* adding variable for the web font*/
+    --font-robot:"Roboto";
+}
