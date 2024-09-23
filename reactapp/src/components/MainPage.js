@@ -1,6 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/inkblog1.png';
+import logo1 from '../images/contentImage.jpg';
+
+
+
+
 import '../App.css';
 
 function App() {
@@ -22,11 +27,17 @@ function App() {
       </div>
 
       {/* Page Content */}
-      <div className="page-content">
-        <p>website contents.</p>
-   
-      </div>
 
+        <div className="contentImage">
+          <img src={logo1} alt="Logo1" />
+    
+
+  
+        <p>Hello, My name is Ermiyas Gulti.  Software Engineering</p>
+        <p>student passionate about coding and technology.</p> 
+        <p>I live in Kitchener and I am looking for Co-op Jobs</p>
+        </div>
+    
 
 
           {/* footer Links */}

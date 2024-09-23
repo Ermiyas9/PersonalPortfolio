@@ -40,8 +40,20 @@
   color: #007BFF;
 }
 
+.contentImage{
+  flex: 0; 
+  margin-right: 0px;
+
+
+}
+
+
 .page-content {
   padding: 40px;
-  font-size: 80px;
+  font-size: 20px;
   line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
 }
+
