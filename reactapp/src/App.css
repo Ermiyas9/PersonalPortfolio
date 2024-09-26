@@ -24,12 +24,24 @@
   width: 600px; 
 }
 
+.hireMeIcon {
+  display: flex;
+  align-items: right;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.hireMeIcon img {
+  width: 50px;
+  height: auto;
+}
+
 /* Navigation links container */
 .headerNavLink {
   display: flex;
   justify-content: center;
-  font-family: 'Poppins', sans-serif;
-  gap: 50px; 
+  font-family: 'Montserrat', sans-serif;
+  gap: 150px; 
   margin: 0;
 }
 
@@ -37,7 +49,7 @@
 .nav-link {
   color: #000000;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 25px;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -48,43 +60,63 @@
   color: #007BFF;
 }
 
-/* Container for content image */
+.imageAndIntroPara {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px;
+}
+
 .contentImage {
+  flex: 1;
   display: flex;
   justify-content: left;
-  margin: 20px auto;
+  align-items: start;
 }
 
 .contentImage img {
   width: 300px; 
-  height: auto;
+  height: auto; 
 }
 
-/* Center text content below the image */
 .midParagraphTxt {
+  flex: 2;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items:center;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
-  line-height: 1.6;
-  margin-top: 20px;
+  line-height: 0.3;
+  margin-left: 40px;
 }
+
+
 
 /* Footer links container */
 .footerNavLink {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 150px;
   margin-top: 40px;
 }
 
 /* Page content container */
 .page-content {
   padding: 40px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 1.6;
   text-align: center;
   margin: 0 auto;
   max-width: 600px;
 }
+
+
+/* social media icons class css  */
+.socialMediaIcons {
+  width: 44px; 
+  height: 44px; 
+  margin: 0 10px; 
+  object-fit: contain;
+}
+
