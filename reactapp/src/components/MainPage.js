@@ -80,36 +80,77 @@ function App() {
 
 
         {/* Social Media Icons  in the div class to remind myself that to make image and text both of them in one underline*/}
+        <div className="githubLogo" style={{ display: 'block', marginBottom: '10px' }}>
+          <span style={{ display: 'inline-block', borderBottom: '3px solid black' }}>
+            <img src={githubIcon} alt="githubLogo" className="socialMediaIcons" style={{ verticalAlign: 'middle' }} />
+            
+            <Link 
+              to="https://github.com/Ermiyas9" 
+              className="socialMediaIcons" 
+              style={{ textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}
+            >
+              Github/Ermiyas9
+            </Link>
+          </span>
+        </div>
 
-        <div className="githubLogo" style={{ display: 'inline-block', borderBottom: '3px solid black' }}>
-          <img src={githubIcon} alt="githubLogo" className="socialMediaIcons" style={{ verticalAlign: 'middle' }} />
-          
-          <Link 
-            to="https://github.com/Ermiyas9" 
-            className="socialMediaIcons" 
-            style={{ textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}
-          >
-            Github/Ermiyas9
-          </Link>
+        <div className="linkedInLogo" style={{ display: 'block', marginBottom: '10px' }}>
+          <span style={{ display: 'inline-block', borderBottom: '3px solid black' }}>
+            <img src={linkedInIcon} alt="linkedInLogo" className="socialMediaIcons" style={{ verticalAlign: 'middle' }} />
+            
+            <Link 
+              to="https://www.linkedin.com/in/ermiyas-gulti-ermigulti/" 
+              className="socialMediaIcons" 
+              style={{ textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}
+            >
+              LinkedIn/Ermiyas Gulti 
+            </Link>
+          </span>
         </div>
 
 
-        <div className="linkedInLogo">
-          <img src={linkedInIcon} alt="linkedInLogo" className="socialMediaIcons" />
+        <div className="instaIcon" style={{ display: 'block', marginBottom: '10px' }}>
+          <span style={{ display: 'inline-block', borderBottom: '3px solid black' }}>
+            <img src={instaImageIcon} alt="instaLogo" className="socialMediaIcons" style={{ verticalAlign: 'middle' }} />
+            
+            <Link 
+              to="https://github.com/Ermiyas9" 
+              className="socialMediaIcons" 
+              style={{ textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}
+            >
+              Instagram/Ermiyas_g9
+            </Link>
+          </span>
         </div>
 
-        <div className="instaIcon">
-          <img src={instaImageIcon} alt="instaLogo" className="socialMediaIcons" />
+
+        <div className="outlookIcon" style={{ display: 'block', marginBottom: '10px' }}>
+          <span style={{ display: 'inline-block', borderBottom: '3px solid black' }}>
+            <img src={outlookImageIcon} alt="outlookLogo" className="socialMediaIcons" style={{ verticalAlign: 'middle' }} />
+            
+            <Link 
+              to="https://github.com/Ermiyas9" 
+              className="socialMediaIcons" 
+              style={{ textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}
+            >
+              outlook 
+            </Link>
+          </span>
         </div>
 
-        <div className="outlookIcon">
-          <img src={outlookImageIcon} alt="outlookLogo" className="socialMediaIcons" />
+        <div className="emailIcon" style={{ display: 'block', marginBottom: '10px' }}>
+          <span style={{ display: 'inline-block', borderBottom: '3px solid black' }}>
+            <img src={emailIcon} alt="emailLogo"  className="socialMediaIcons" style={{ verticalAlign: 'middle' }} />
+            
+            <Link 
+              to="https://github.com/Ermiyas9" 
+              className="socialMediaIcons" 
+              style={{ textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}
+            >
+              gmail 
+            </Link>
+          </span>
         </div>
-
-        <div className="emailIcon">
-          <img src={emailIcon} alt="emailLogo" className="socialMediaIcons" />
-        </div>
-
 
     </div>
   );
