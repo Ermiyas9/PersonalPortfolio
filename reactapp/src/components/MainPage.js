@@ -43,7 +43,7 @@ function App() {
 
         <div className="hireMeIcon">
           <img src={hireMeIcon} alt="Hire Me Icon" />
-          <Link to="/hireMe" className="logo">Hire Me</Link>
+          <span><Link to="/hireMe" className="logo">Hire Me</Link></span>
         </div>
 
     
@@ -79,11 +79,20 @@ function App() {
         </div>
 
 
-        {/* Social Media Icons */}
+        {/* Social Media Icons  in the div class to remind myself that to make image and text both of them in one underline*/}
 
-        <div className="githubLogo">
-          <img src={githubIcon} alt="githubLogo" className="socialMediaIcons" />
+        <div className="githubLogo" style={{ display: 'inline-block', borderBottom: '3px solid black' }}>
+          <img src={githubIcon} alt="githubLogo" className="socialMediaIcons" style={{ verticalAlign: 'middle' }} />
+          
+          <Link 
+            to="https://github.com/Ermiyas9" 
+            className="socialMediaIcons" 
+            style={{ textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}
+          >
+            Github/Ermiyas9
+          </Link>
         </div>
+
 
         <div className="linkedInLogo">
           <img src={linkedInIcon} alt="linkedInLogo" className="socialMediaIcons" />
