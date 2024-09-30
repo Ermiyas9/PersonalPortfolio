@@ -18,12 +18,18 @@ import '../App.css';
 function App() {
   return (
     <div className="app-container">
-   
-        {/* Logo Image */}
-        <div className="logo">
+      <div className="icon-container">
+
+      <div className="logo">
           <img src={logo} alt="Logo" />
         </div>
-        
+
+        <div className="hireMeIcon">
+          <img src={hireMeIcon} alt="Hire Me Icon" />
+          <span><Link to="/hireMe">Hire Me</Link></span>
+        </div>
+      </div>
+
     
         {/* Navigation Links */}
         <div className="headerNavLink">
@@ -39,11 +45,6 @@ function App() {
       {/* Page Content */}
         <div className="contentImage">
           <img src={contentImage} alt="contentImage" />
-        </div>
-
-        <div className="hireMeIcon">
-          <img src={hireMeIcon} alt="Hire Me Icon" />
-          <span><Link to="/hireMe" className="logo">Hire Me</Link></span>
         </div>
 
     
@@ -133,7 +134,7 @@ function App() {
               className="socialMediaIcons" 
               style={{ textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}
             >
-              outlook 
+              Hire Me 
             </Link>
           </span>
         </div>
@@ -147,7 +148,7 @@ function App() {
               className="socialMediaIcons" 
               style={{ textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}
             >
-              gmail 
+             Contact me  
             </Link>
           </span>
         </div>

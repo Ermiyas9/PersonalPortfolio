@@ -14,34 +14,41 @@
   gap: 200px; 
 }
 
-/* Logo container */
-.logo {
-  flex: 0;
-}
-
-/* Logo image size */
-.logo img {
-  width: 600px; 
-}
-
-.hireMeIcon {
+.icon-container {
+  margin-top:0%;
   display: flex;
-  align-items: right;
-  gap: 10px;
-  margin-top: 20px;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
 }
 
-.hireMeIcon img {
-  width: 50px;
+.hireMeIcon, .logo {
+  display: flex;
+  align-items: center;
+}
+
+.hireMeIcon img{
+  width: 100px; 
   height: auto;
 }
+
+.logo img {
+  width: 800px; 
+  height: auto;
+}
+
+.hireMeIcon span {
+  font-size: 26px;
+  margin-left: 5px; 
+}
+
 
 /* Navigation links container */
 .headerNavLink {
   display: flex;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
-  gap: 150px; 
+  gap: 500px; 
   margin: 0;
 }
 
@@ -87,6 +94,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   line-height: 0.1;
+  margin-top: 80px;
   margin-left: 40px;
 }
 
@@ -96,8 +104,9 @@
 .footerNavLink {
   display: flex;
   justify-content: center;
-  gap: 150px;
-  margin-top: 40px;
+  gap: 500px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 /* Page content container */
