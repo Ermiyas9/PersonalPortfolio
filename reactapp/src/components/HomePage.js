@@ -18,19 +18,35 @@ function HomePage() {
           <img src={logo} alt="Logo" />
         </div>
 
-        <div className="hireMeIcon">
-          <img src={hireMeIcon} alt="Hire Me Icon" />
-          <span>
-            <Link to="/hireMe">Hire Me</Link>
-          </span>
-        </div>
+    
+
+
+      <div className="hireMeIcon" style={{ display: 'block', marginBottom: '10px' }}>
+        <span style={{ display: 'inline-flex', alignItems: 'center', borderBottom: '3px solid black' }}>
+          <a 
+            href="mailto:egulti4128@conestogac.on.ca" 
+            className="hireMeIcon" 
+            style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}
+          >
+            <img 
+              src={hireMeIcon} 
+              alt="Hire Me Icon" 
+              className="hireMeIcon" 
+              style={{ verticalAlign: 'middle' }} 
+            />
+            <span style={{ marginLeft: '5px' }}>Hire Me</span>
+          </a>
+        </span>
+      </div>
+
+
       </div>
 
       <div>
         <div className="headerNavLink">
           <Link to="/" className="nav-link">Home</Link>
           <Link to="/AboutMe" className="nav-link">About Me</Link>
-          <Link to="/Experience" className="nav-link">Work Experience</Link>
+          <Link to="/workExprience" className="nav-link">Work Experience</Link>
         </div>
       </div>
 
@@ -40,8 +56,10 @@ function HomePage() {
         </div>
 
         <div className="midParagraphTxt">
-          <p>Hello, my name is Ermiyas Gulti. I am a Software Engineering student passionate about coding and technology.</p>
-          <p>I live in Kitchener and I am looking for co-op jobs.</p>
+          <p>Hello, my name is Ermiyas Gulti.</p>
+          <p>I am a Software Engineering student </p>
+          <p>passionate about coding and technology.</p>
+          <p>I live in Kitchener and I am looking for co-op job.</p>
         </div>
       </div>
 
@@ -60,6 +78,7 @@ function HomePage() {
           <span>N</span>
         </span>
       </span>
+      
 
       <div className="footerNavLink">
         <Link to="/Projects" className="nav-link">Projects</Link>
@@ -68,50 +87,95 @@ function HomePage() {
       </div>
 
       <div className="socialMediaIconsContainer">
-        <div className="githubLogo" style={{ display: 'block', marginBottom: '10px' }}>
-          <span style={{ display: 'inline-block', borderBottom: '3px solid black' }}>
-            <img src={githubIcon} alt="GitHub" className="socialMediaIcons" style={{ verticalAlign: 'middle' }} />
-            <a href="https://github.com/Ermiyas9" className="socialMediaIcons" style={{ textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}>
-              GitHub/Ermiyas9
-            </a>
-          </span>
-        </div>
 
-        <div className="linkedInLogo" style={{ display: 'block', marginBottom: '10px' }}>
-          <span style={{ display: 'inline-block', borderBottom: '3px solid black' }}>
-            <img src={linkedInIcon} alt="LinkedIn" className="socialMediaIcons" style={{ verticalAlign: 'middle' }} />
-            <a href="https://www.linkedin.com/in/ermiyas-gulti-ermigulti/" className="socialMediaIcons" style={{ textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}>
-              LinkedIn/Ermiyas Gulti
-            </a>
-          </span>
-        </div>
 
-        <div className="instaIcon" style={{ display: 'block', marginBottom: '10px' }}>
-          <span style={{ display: 'inline-block', borderBottom: '3px solid black' }}>
-            <img src={instaImageIcon} alt="Instagram" className="socialMediaIcons" style={{ verticalAlign: 'middle' }} />
-            <a href="https://www.instagram.com/Ermiyas_g9" className="socialMediaIcons" style={{ textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}>
-              Instagram/Ermiyas_g9
-            </a>
-          </span>
-        </div>
+        {/* link to my gitHub */}
 
-        <div className="outlookIcon" style={{ display: 'block', marginBottom: '10px' }}>
-          <span style={{ display: 'inline-block', borderBottom: '3px solid black' }}>
-            <img src={outlookImageIcon} alt="Outlook" className="socialMediaIcons" style={{ verticalAlign: 'middle' }} />
-            <a href="mailto:egulti4128@conestogac.on.ca" className="socialMediaIcons" style={{ textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}>
-              Hire Me
-            </a>
-          </span>
-        </div>
+          <div className="githubIcon" style={{ display: 'block', marginBottom: '10px' }}>
+              <a 
+                href="https://github.com/Ermiyas9"
+                className="socialMediaIcons" 
+                style={{ textDecoration: 'none', display: 'inline-block', verticalAlign: 'middle' }}
+              >
+                <img 
+                  src={githubIcon} 
+                  alt="Email" 
+                  className="socialMediaIcons" 
+                  style={{ verticalAlign: 'middle' }} 
+                />
+              </a>
+          </div>
+    
 
-        <div className="emailIcon" style={{ display: 'block', marginBottom: '10px' }}>
-          <span style={{ display: 'inline-block', borderBottom: '3px solid black' }}>
-            <img src={emailIcon} alt="Email" className="socialMediaIcons" style={{ verticalAlign: 'middle' }} />
-            <a href="mailto:enduethio@gmail.com" className="socialMediaIcons" style={{ textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '20px', marginLeft: '5px', verticalAlign: 'middle' }}>
-              Contact Me
-            </a>
-          </span>
-        </div>
+        {/* link to my linkdIn */}
+
+          <div className="linkedInIcon" style={{ display: 'block', marginBottom: '10px' }}>
+              <a 
+                href="https://www.linkedin.com/in/ermiyas-gulti-4ab51521a/" 
+                className="socialMediaIcons" 
+                style={{ textDecoration: 'none', display: 'inline-block', verticalAlign: 'middle' }}
+              >
+                <img 
+                  src={linkedInIcon} 
+                  alt="Email" 
+                  className="socialMediaIcons" 
+                  style={{ verticalAlign: 'middle' }} 
+                />
+              </a>
+          </div>
+
+          
+          {/* link to my insta */}
+
+          <div className="emailIcon" style={{ display: 'block', marginBottom: '10px' }}>
+              <a 
+                href="https://www.instagram.com/Ermiyas_g9" 
+                className="socialMediaIcons" 
+                style={{ textDecoration: 'none', display: 'inline-block', verticalAlign: 'middle' }}
+              >
+                <img 
+                  src={instaImageIcon} 
+                  alt="Email" 
+                  className="socialMediaIcons" 
+                  style={{ verticalAlign: 'middle' }} 
+                />
+              </a>
+          </div>
+
+          {/* link to school email */}
+
+          <div className="emailIcon" style={{ display: 'block', marginBottom: '10px' }}>
+              <a 
+                href="mailto:egulti4128@conestogac.on.ca" 
+                className="socialMediaIcons" 
+                style={{ textDecoration: 'none', display: 'inline-block', verticalAlign: 'middle' }}
+              >
+                <img 
+                  src={outlookImageIcon} 
+                  alt="Email" 
+                  className="socialMediaIcons" 
+                  style={{ verticalAlign: 'middle' }} 
+                />
+              </a>
+          </div>
+
+          {/* link to personal email */}
+
+          <div className="emailIcon" style={{ display: 'block', marginBottom: '10px' }}>
+              <a 
+                href="mailto:enduethio@gmail.com" 
+                className="socialMediaIcons" 
+                style={{ textDecoration: 'none', display: 'inline-block', verticalAlign: 'middle' }}
+              >
+                <img 
+                  src={emailIcon} 
+                  alt="Email" 
+                  className="socialMediaIcons" 
+                  style={{ verticalAlign: 'middle' }} 
+                />
+              </a>
+          </div>
+
       </div>
     </div>
   );
