@@ -131,3 +131,45 @@
   object-fit: contain;
 }
 
+
+/* Style the tab buttons */
+.headerTab {
+  background-color: #b494bd;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 100%;
+  display: block;
+
+}
+.menuBtn{
+  color: rgb(0, 0, 0);
+  float: left;
+  border:0pc;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 10%;
+  display: block;
+  text-align: left;
+
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #386a76;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+

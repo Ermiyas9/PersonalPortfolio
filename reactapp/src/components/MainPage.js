@@ -6,6 +6,7 @@ import AboutMe from '../AboutMe';
 import HomePage from '../HomePage'; 
 import Doggo from '../Doggo'; 
 import Hobbies from './Hobbies';
+
 import Projects from './Projects';
 import WorkExprience from './WorkExprience';
 
@@ -15,7 +16,12 @@ function App() {
     <BrowserRouter>
       <Routes>
 
+        
+
         {/* Home page as the default route */}
+
+        
+
         <Route path="/" element={<HomePage />} /> 
 
         {/* Route for About Me page */}

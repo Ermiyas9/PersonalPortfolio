@@ -1,5 +1,7 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import HeaderComponents from './Header';
 import logo from '../images/inkblog1.png';
 import contentImage from '../images/contentImage.jpg';
 import hireMeIcon from '../images/hireMePic.png';
@@ -12,7 +14,17 @@ import '../App.css';
 
 function HomePage() {
   return (
+
+
+
+
+
     <div className="app-container">
+
+        <Routes>
+          <Route path="/" element={<HeaderComponents />} />
+        </Routes>
+        
       <div className="icon-container">
         <div className="logo">
           <img src={logo} alt="Logo" />
