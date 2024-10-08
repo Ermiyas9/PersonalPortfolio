@@ -140,7 +140,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 20px 20px;
   font-size: 17px;
   width: 100%;
   display: block;
@@ -152,24 +152,46 @@
   border:0pc;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 0px 0px;
   font-size: 17px;
   width: 10%;
   display: block;
   text-align: left;
 
 }
+/* this will remove the bullet lists*/
+ul
+{
+  list-style-type: none;
+ }
 
 /* Change background color of buttons on hover */
 .tablink:hover {
   background-color: #386a76;
 }
 
-/* Set default styles for tab content */
+/* Seting default styles for tab content */
 .tabcontent {
   color: white;
   display: none;
   padding: 50px;
-  text-align: center;
+  text-align: LEFT;
 }
 
+.menuList {
+  display: flex; 
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.menuList ul {
+  list-style: none; 
+  padding-left: 0; 
+}
+
+.menuList li {
+  margin-bottom: 10px; 
+  text-align: left;
+
+}
