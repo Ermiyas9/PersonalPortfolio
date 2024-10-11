@@ -1,197 +1,161 @@
 /* Container for the entire app */
 .app-container {
   width: 100%;
-  padding: 20px;
-  background-color: #e0f2fa;
-}
-
-/* Logo and navigation container */
-.headerNavLink {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 10px;
-  gap: 200px; 
-}
-
-.icon-container {
-  margin-top:0%;
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  width: 100%; 
-}
-
-.hireMeIcon, .logo {
-  display: flex;
-  align-items: center;
-}
-
-.hireMeIcon img{
-  width: 100px; 
   height: auto;
+  background-color: #E8F9FB;
 }
 
+
+/* Logo image styling */
 .logo img {
-  width: 800px; 
-  height: auto;
+  width: 75px;
+  height: 100;
 }
 
-.hireMeIcon span {
-  font-size: 26px;
-  margin-left: 5px; 
+/* Hire me icon image styling */
+.hireMeIcon img {
+  width: 50px; 
+  height: auto;
+  padding-top: 20px;
 }
+
+.contentImage{
+padding-left: 300px;
+}
+
+
+
+/* Menu button styling */
+.menuBtn {
+  display: inline-block;
+  padding-left: 30px;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: Georgia, cursive, sans-serif;
+  font-weight: bold;
+}
+
+#menuDropDown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+
+
+.logo {
+  margin-right: auto; 
+  padding-top: 5px;
+}
+
+.hireMeIcon {
+  display: flex;
+  padding-left: 20px;
+  align-items: right;
+  font-size: 30px;
+  font-family: Georgia, cursive, sans-serif;
+  font-weight: bold;
+}
+
+.menuBtn {
+  display: flex;
+  padding-top: auto;
+  padding-left: 5px;
+  margin-right: 20px; 
+}
+
+
 
 
 /* Navigation links container */
 .headerNavLink {
-  display: flex;
-  justify-content: center;
-  font-family: 'Montserrat', sans-serif;
-  gap: 500px; 
-  margin: 0;
+  padding-left: 20px;
+  font-family: Georgia, cursive, sans-serif;
+  font-weight: bold;
+  margin: 0 120px;
+  padding-bottom: 50px;
+  text-decoration: none; 
+  font-size: 25px;
 }
 
 /* Styling for navigation links */
 .nav-link {
-  color: #000000;
+  padding-left: 20px;
+  font-family: Georgia, cursive, sans-serif;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  margin: 0 120px;
+  text-decoration: none; 
+  padding-bottom: 50px;
   font-size: 25px;
-  text-decoration: none;
-  transition: color 0.3s ease;
 }
+
 
 /* Hover effect for navigation links */
 .nav-link:hover {
   color: #007BFF;
 }
 
-.imageAndIntroPara {
-  display: flex;
-  align-items: flex-start;
-  margin: 20px;
-}
-
-.contentImage {
-  flex: 1;
-  display: flex;
-  justify-content: left;
-  align-items: start;
-}
-
-.contentImage img {
-  width: 300px; 
-  height: auto; 
-}
-
-.midParagraphTxt {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  line-height: 0;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 100px;
-  margin-left: 100px;
-}
-
-
-
-/* Footer links container */
-.footerNavLink {
-  display: flex;
-  justify-content: center;
-  gap: 500px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-/* Page content container */
-.page-content {
-  padding: 40px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 1.6;
-  text-align: center;
-  margin: 0 auto;
-  max-width: 600px;
-}
-
-
-/* social media icons class css  */
-.socialMediaIcons {
-  width: 44px; 
-  height: 44px; 
-  margin: 0 10px; 
-  object-fit: contain;
-}
-
-
-/* Style the tab buttons */
-.headerTab {
-  background-color: #b494bd;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 20px 20px;
-  font-size: 17px;
-  width: 100%;
-  display: block;
-
-}
-.menuBtn{
-  color: rgb(0, 0, 0);
-  float: left;
-  border:0pc;
-  outline: none;
-  cursor: pointer;
-  padding: 0px 0px;
-  font-size: 17px;
-  width: 10%;
-  display: block;
-  text-align: left;
-
-}
-/* this will remove the bullet lists*/
-ul
-{
+/* Remove bullet points from lists */
+ul {
   list-style-type: none;
- }
+}
 
 /* Change background color of buttons on hover */
 .tablink:hover {
   background-color: #386a76;
 }
 
-/* Seting default styles for tab content */
+/* Default styles for tab content */
 .tabcontent {
   color: white;
   display: none;
   padding: 50px;
-  text-align: LEFT;
+  text-align: left;
 }
 
+/* Menu list styling */
 .menuList {
-  display: flex; 
-  font-size: 1.2em;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  font-size: 30px;
+  font-family: Georgia, cursive, sans-serif;
+  font-weight: bold;
 }
 
+.imageAndIntroPara{
+  display: flex; 
+  font-size: 10px;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding-left: 300px;
+  font-family: Georgia, cursive, sans-serif;
+  font-size: 20px;
+}
+
+/* Styling for the unordered list in the menu */
 .menuList ul {
   list-style: none; 
-  padding-left: 0; 
+  font-family: Georgia, cursive, sans-serif;
+  font-weight: bold;
+  float: right;
 }
 
+/* Menu list item styling */
 .menuList li {
-  margin-bottom: 10px; 
-  text-align: left;
+  margin-bottom: 80px; 
+}
 
+.menuItems {
+  float: right; 
+}
+
+.socialMediaIconsContainer {
+  float: left; 
+}
+
+.socialMediaIcons {
+  width: 30px; 
+  height: 30px; 
+  float: right;
 }

@@ -1,0 +1,3 @@
+1. #E8F9FB (HomePage bg color), #7758E8 (Text color) second color #FF7171
+
+2. #FCDCF1 (About me bg clr ), #E85858 #FF71D6
