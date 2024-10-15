@@ -1,12 +1,21 @@
+
 // Projects.js
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HeaderComponents from './Header';
 
 function Projects() {
     return (
-        <div>
-            <h1>My Projects</h1>
-            <p>Projectssss</p>
-        </div>
+
+    <div className="projects">
+        <HeaderComponents >
+            <div className="Projects">
+                <h1>About My Projects</h1>
+           
+            </div>
+        </HeaderComponents>
+
+    </div>
     );
 }
 

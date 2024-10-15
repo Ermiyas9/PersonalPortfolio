@@ -9,38 +9,67 @@ import instaImageIcon from '../images/homePage/instaImage.png';
 import outlookImageIcon from '../images/homePage/outlookImage.png';
 import emailIcon from '../images/homePage/emailImage.png';
 
-
 import '../App.css';
+import HomePage from "./HomePage";
 
-function HeaderComponents() {
-  const [activeTabName, setActiveTabName] = useState("Menu");
 
-  // Initialize current page state
-  const [currentPage, setCurrentPage] = useState("currentPage"); 
+function stylingComponents()
+{
 
-  const handleTabClick = (tabName) => {
-    setActiveTabName(tabName);
-    if (tabName === "Close") {
 
-      // Set current page when Close is clicked
-      setCurrentPage("currentPage"); 
-    }
+}
+
+function HeaderComponents({ children }) {
+  // State to toggle the menu
+  const [menuOpen, setMenuOpen] = useState(false); 
+
+  const handleMenuToggle = () => {
+
+     // Toggle between open and close
+    setMenuOpen((prevMenuOpen) => !prevMenuOpen);
   };
 
-  // Get the current page path
-const currentPath = window.location.pathname;
+  return (
+    <div id="menuDropDown" className="dropDownMenu">
+      <div className="logo">
+        <img src={logo} alt="Logo" />
+      </div>
 
+      <div id="menuButton" className="menuBtn">
 
-  // Conditional Rendering
-  let content;
-  if (activeTabName === "Menu") {
-    content = (
-      <div className="menuItems">
+        {/* Toggle between "Menu" and "Close" */}
+        <div
+          className={`tablink ${menuOpen ? "active" : ""}`}
+          onClick={handleMenuToggle}
+        >
+          {menuOpen ? "Close" : "Menu"}
+        </div>
+      </div>
 
-        <div className="socialMediaIconsContainer" style={{display: 'flex', flexDirection: 'row', gap: '20px',paddingBottom: '20px',paddingLeft:'5px'}}>
+      <div className="hireMeIcon">
+        <a 
+          href="mailto:egulti4128@conestogac.on.ca" 
+          className="hireMeIconLink"
+        >
+          <img 
+            src={hireMeIcon} 
+            alt="Hire Me Icon" 
+            className="hireMeIconImage"
+            style={{ width: '100px', height: 'auto', verticalAlign: 'middle' }} 
+          />
+          <span style={{ marginLeft: '20px', textDecoration: 'none' }}>Hire Me</span>
+        </a>
+      </div>
+      
+      <div className="menuBtnOptions">
+        {menuOpen ? (
 
-            {/* link to my gitHub */}
-            <div className="githubIcon">
+          // Menu content when the menu is open
+          <div className="menuItems">
+            <div className="socialMediaIconsContainer" style={{ display: 'flex', flexDirection: 'row', gap: '20px', paddingBottom: '20px', paddingLeft: '5px' }}>
+              
+              {/* Social media icons */}
+              <div className="githubIcon">
                 <a 
                   href="https://github.com/Ermiyas9"
                   className="socialMediaIcons" 
@@ -53,10 +82,8 @@ const currentPath = window.location.pathname;
                     style={{ verticalAlign: 'middle' }} 
                   />
                 </a>
-            </div>
-
-            {/* link to my LinkedIn */}
-            <div className="linkedInIcon">
+              </div>
+              <div className="linkedInIcon">
                 <a 
                   href="https://www.linkedin.com/in/ermiyas-gulti-4ab51521a/" 
                   className="socialMediaIcons" 
@@ -69,10 +96,8 @@ const currentPath = window.location.pathname;
                     style={{ verticalAlign: 'middle' }} 
                   />
                 </a>
-            </div>
-
-            {/* link to my Instagram */}
-            <div className="emailIcon">
+              </div>
+              <div className="emailIcon">
                 <a 
                   href="https://www.instagram.com/Ermiyas_g9" 
                   className="socialMediaIcons" 
@@ -85,10 +110,8 @@ const currentPath = window.location.pathname;
                     style={{ verticalAlign: 'middle' }} 
                   />
                 </a>
-            </div>
-
-            {/* link to school email */}
-            <div className="emailIcon">
+              </div>
+              <div className="emailIcon">
                 <a 
                   href="mailto:egulti4128@conestogac.on.ca" 
                   className="socialMediaIcons" 
@@ -101,10 +124,8 @@ const currentPath = window.location.pathname;
                     style={{ verticalAlign: 'middle' }} 
                   />
                 </a>
-            </div>
-
-            {/* link to personal email */}
-            <div className="emailIcon">
+              </div>
+              <div className="emailIcon">
                 <a 
                   href="mailto:enduethio@gmail.com" 
                   className="socialMediaIcons" 
@@ -117,65 +138,21 @@ const currentPath = window.location.pathname;
                     style={{ verticalAlign: 'middle' }} 
                   />
                 </a>
+              </div>
+            </div>
+            <div className="menuList">
+              <ul>
+                {/* Menu items with Links */}
+                <li><Link to="/">HOME</Link></li>
+                <li><Link to="/aboutMe">ABOUT ME</Link></li>
+                <li><Link to="/projects">MY PROJECTS</Link></li>
+                <li><Link to="/doggo">MY DOGGO</Link></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div className="menuList" >
-          <ul>
-            <li>HOME</li>
-            <li>ABOUT ME</li>
-            <li>MY PROJECTS</li>
-            <li>MY DOGGO</li>
-          </ul> 
-        </div>
-      </div>  
-  );
-  } else if (activeTabName === "Close") {
-
-    // Display current page when Close is clicked
-    content = content = null;;
-  }
-
-  return (
-    <div id="menuDropDown" className="dropDownMenu">
-        <div className="logo">
-          <img src={logo} alt="Logo" />
-        </div>
-
-        <div id="menuButton" className="menuBtn">
-          <div
-            className={`tablink ${activeTabName === "Menu" ? "active" : ""}`}
-            onClick={() => handleTabClick("Menu")}
-          >
-            Menu | 
-          </div>
-          <div
-            className={`tablink ${activeTabName === "Close" ? "active" : ""}`}
-            onClick={() => handleTabClick("Close")}
-          >
-            Close
-          </div>
-        </div>
-
-        <div className="hireMeIcon">
-          <a 
-            href="mailto:egulti4128@conestogac.on.ca" 
-            className="hireMeIconLink"
-          >
-            <img 
-              src={hireMeIcon} 
-              alt="Hire Me Icon" 
-              className="hireMeIconImage"
-              style={{ width: '100px', height: 'auto', verticalAlign: 'middle' }} 
-            />
-            <span style={{ marginLeft: '20px', textDecoration: 'none' }}>Hire Me</span>
-          </a>
-        </div>
-        
-        <div className="menuBtnOptions">
-          {content}
-        </div>
+        ) : null} {/* Render nothing if the menu is closed */}
+      </div>
     </div>
-
   );
 }
 

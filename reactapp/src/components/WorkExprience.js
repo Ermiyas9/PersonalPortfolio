@@ -1,12 +1,20 @@
 // WorkExprience.js
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HeaderComponents from './Header';
 
 function WorkExprience() {
     return (
-        <div>
-            <h1>Work Experience</h1>
-            <p>Experience</p>
-        </div>
+
+        <div className="Exprience">
+        <HeaderComponents >
+            <div className="exprience">
+                <h1>About My Work exprience</h1>
+           
+            </div>
+        </HeaderComponents>
+
+    </div>
     );
 }
 

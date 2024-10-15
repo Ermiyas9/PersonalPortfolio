@@ -1,15 +1,50 @@
-/* Container for the entire app */
-.app-container {
-  width: 100%;
-  height: auto;
-  background-color: #E8F9FB;
+/* Flexbox container for the header (Logo, Menu/Close, Hire Me) */
+#menuDropDown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.aboutMeContent {
+  background-color: #FCDCF1; 
+  padding: 20px; 
+  border-radius: 8px; 
 }
 
 
 /* Logo image styling */
 .logo img {
   width: 75px;
-  height: 100;
+  height: auto;
+  padding-top: 5px;
+}
+
+.logo {
+  flex: 1;
+}
+
+/* Align the logo, menu button, and hire me icon in the first row */
+.menuBtn {
+  flex: 1;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: Georgia, cursive, sans-serif;
+  font-weight: bold;
+}
+
+.hireMeIcon {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 5px;
+  font-size: 30px;
+  font-family: Georgia, cursive, sans-serif;
+  font-weight: bold;
 }
 
 /* Hire me icon image styling */
@@ -19,55 +54,63 @@
   padding-top: 20px;
 }
 
-.contentImage{
-padding-left: 300px;
+/* Second row: Social media icons and menu list */
+.socialMediaAndMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Space between social icons and menu list */
+  padding-top: 20px;
+  width: 100%; /* Full width to ensure alignment */
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
+/* Social media icons styling */
+.socialMediaIconsContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
 
+.socialMediaIcons {
+  width: 30px;
+  height: 30px;
+}
 
-/* Menu button styling */
-.menuBtn {
-  display: inline-block;
-  padding-left: 30px;
-  color: black;
-  cursor: pointer;
-  font-size: 30px;
+/* Menu list styling */
+.menuList {
+  font-size: 25px;
   font-family: Georgia, cursive, sans-serif;
   font-weight: bold;
-}
-
-#menuDropDown {
+  list-style-type: none;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+  gap: 40px; /* Space between menu items */
+  justify-content: flex-end;
 }
 
-
-
-.logo {
-  margin-right: auto; 
-  padding-top: 5px;
+/* General App Container */
+.app-container {
+  width: 100%;
+  height: auto;
+  background: #E8F9FB;
 }
 
-.hireMeIcon {
-  display: flex;
-  padding-left: 20px;
-  align-items: right;
-  font-size: 30px;
-  font-family: Georgia, cursive, sans-serif;
-  font-weight: bold;
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #f1ed15;
+  padding: 5px 10px;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
 }
 
-.menuBtn {
-  display: flex;
-  padding-top: auto;
-  padding-left: 5px;
-  margin-right: 20px; 
+/* Default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: left;
 }
-
-
-
 
 /* Navigation links container */
 .headerNavLink {
@@ -76,7 +119,7 @@ padding-left: 300px;
   font-weight: bold;
   margin: 0 120px;
   padding-bottom: 50px;
-  text-decoration: none; 
+  text-decoration: none;
   font-size: 25px;
 }
 
@@ -86,11 +129,10 @@ padding-left: 300px;
   font-family: Georgia, cursive, sans-serif;
   font-weight: bold;
   margin: 0 120px;
-  text-decoration: none; 
+  text-decoration: none;
   padding-bottom: 50px;
   font-size: 25px;
 }
-
 
 /* Hover effect for navigation links */
 .nav-link:hover {
@@ -102,28 +144,13 @@ ul {
   list-style-type: none;
 }
 
-/* Change background color of buttons on hover */
-.tablink:hover {
-  background-color: #386a76;
+/* Menu list item styling */
+.menuList li {
+  margin-bottom: 80px;
 }
 
-/* Default styles for tab content */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 50px;
-  text-align: left;
-}
-
-/* Menu list styling */
-.menuList {
-  font-size: 30px;
-  font-family: Georgia, cursive, sans-serif;
-  font-weight: bold;
-}
-
-.imageAndIntroPara{
-  display: flex; 
+.imageAndIntroPara {
+  display: flex;
   font-size: 10px;
   margin-bottom: 20px;
   margin-top: 80px;
@@ -133,29 +160,7 @@ ul {
   font-size: 20px;
 }
 
-/* Styling for the unordered list in the menu */
-.menuList ul {
-  list-style: none; 
-  font-family: Georgia, cursive, sans-serif;
-  font-weight: bold;
-  float: right;
+.contentImage {
+  padding-left: 300px;
 }
 
-/* Menu list item styling */
-.menuList li {
-  margin-bottom: 80px; 
-}
-
-.menuItems {
-  float: right; 
-}
-
-.socialMediaIconsContainer {
-  float: left; 
-}
-
-.socialMediaIcons {
-  width: 30px; 
-  height: 30px; 
-  float: right;
-}

@@ -9,6 +9,8 @@ import Hobbies from './components/Hobbies.js';
 import Projects from './components/Projects.js';
 
 function App() {
+
+  
   return (
     <Router>
       <Routes>y
