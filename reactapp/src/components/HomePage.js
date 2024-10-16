@@ -10,11 +10,6 @@ import '../App.css';
 
 function HomePage() {
   return (
-
-
-
-
-
     <div className="app-container">
 
         <Routes>

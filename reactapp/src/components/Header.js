@@ -9,23 +9,23 @@ import instaImageIcon from '../images/homePage/instaImage.png';
 import outlookImageIcon from '../images/homePage/outlookImage.png';
 import emailIcon from '../images/homePage/emailImage.png';
 
+
+
 import '../App.css';
-import HomePage from "./HomePage";
+
+function HeaderComponents(props) {
 
 
-function stylingComponents()
-{
-
-
-}
-
-function HeaderComponents({ children }) {
+  // Get the current page URL
+  let currentPage = window.location.href;
+ 
   // State to toggle the menu
-  const [menuOpen, setMenuOpen] = useState(false); 
+  const [menuOpen, setMenuOpen] = useState(false);
+
+ 
 
   const handleMenuToggle = () => {
-
-     // Toggle between open and close
+    // Toggle between open and close
     setMenuOpen((prevMenuOpen) => !prevMenuOpen);
   };
 
@@ -36,7 +36,6 @@ function HeaderComponents({ children }) {
       </div>
 
       <div id="menuButton" className="menuBtn">
-
         {/* Toggle between "Menu" and "Close" */}
         <div
           className={`tablink ${menuOpen ? "active" : ""}`}
@@ -47,10 +46,7 @@ function HeaderComponents({ children }) {
       </div>
 
       <div className="hireMeIcon">
-        <a 
-          href="mailto:egulti4128@conestogac.on.ca" 
-          className="hireMeIconLink"
-        >
+        <a href="mailto:egulti4128@conestogac.on.ca" className="hireMeIconLink">
           <img 
             src={hireMeIcon} 
             alt="Hire Me Icon" 
@@ -60,14 +56,12 @@ function HeaderComponents({ children }) {
           <span style={{ marginLeft: '20px', textDecoration: 'none' }}>Hire Me</span>
         </a>
       </div>
-      
+
       <div className="menuBtnOptions">
         {menuOpen ? (
-
           // Menu content when the menu is open
           <div className="menuItems">
             <div className="socialMediaIconsContainer" style={{ display: 'flex', flexDirection: 'row', gap: '20px', paddingBottom: '20px', paddingLeft: '5px' }}>
-              
               {/* Social media icons */}
               <div className="githubIcon">
                 <a 
@@ -144,9 +138,11 @@ function HeaderComponents({ children }) {
               <ul>
                 {/* Menu items with Links */}
                 <li><Link to="/">HOME</Link></li>
-                <li><Link to="/aboutMe">ABOUT ME</Link></li>
+                <li><Link to="/AboutMe">ABOUT ME</Link></li>
                 <li><Link to="/projects">MY PROJECTS</Link></li>
-                <li><Link to="/doggo">MY DOGGO</Link></li>
+                <li><Link to="/Doggo">MEET MY DOG</Link></li>
+                <li><Link to="/WorkExprience">MY EXPRIENCE</Link></li>
+                <li><Link to="/Hobbies">HOBBIE</Link></li>
               </ul>
             </div>
           </div>

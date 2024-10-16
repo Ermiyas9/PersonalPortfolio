@@ -14,7 +14,7 @@ import emailIcon from '../images/aboutMePage/emailImage.png';
 import HeaderComponents from './Header';
 
 
-function Doggo() {
+function DoggoPage() {
     return (
 
     <div className="doggo">
@@ -31,4 +31,4 @@ function Doggo() {
     );
 }
 
-export default Doggo;
+export default DoggoPage;

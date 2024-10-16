@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeaderComponents from './Header';
 
-function WorkExprience() {
+function WorkExpriencePage() {
     return (
 
         <div className="Exprience">
@@ -18,4 +18,4 @@ function WorkExprience() {
     );
 }
 
-export default WorkExprience;
+export default WorkExpriencePage;

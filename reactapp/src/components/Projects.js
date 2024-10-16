@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeaderComponents from './Header';
 
-function Projects() {
+function ProjectsPage() {
     return (
 
     <div className="projects">
@@ -19,4 +19,4 @@ function Projects() {
     );
 }
 
-export default Projects;
+export default ProjectsPage;

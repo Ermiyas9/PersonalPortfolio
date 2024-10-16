@@ -2,21 +2,19 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import '../App.css';
-import AboutMe from '../AboutMe'; 
+import AboutMePage from '../AboutMe'; 
 import HomePage from '../HomePage'; 
-import Doggo from '../Doggo'; 
-import Hobbies from './Hobbies';
+import DoggoPage from '../Doggo'; 
+import HobbiesPage from './Hobbies';
 
-import Projects from './Projects';
-import WorkExprience from './WorkExprience';
+import ProjectsPage from './Projects';
+import WorkExpriencePage from './WorkExprience';
 
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-
-        
 
         {/* Home page as the default route */}
 
@@ -25,22 +23,22 @@ function App() {
         <Route path="/" element={<HomePage />} /> 
 
         {/* Route for About Me page */}
-        <Route path="../AboutMe" element={<AboutMe />} /> 
+        <Route path="../AboutMe" element={<AboutMePage />} /> 
 
 
          {/* Route for About Me page */}
-         <Route path="../Doggo" element={<Doggo />} /> 
+         <Route path="../Doggo" element={<DoggoPage/>} /> 
 
 
              {/* Home page as the default route */}
-        <Route path="../WorkExprience" element={<WorkExprience />} /> 
+        <Route path="../WorkExprience" element={<WorkExpriencePage />} /> 
 
         {/* Route for Projects page */}
-        <Route path="../Projects" element={<Projects />} /> 
+        <Route path="../Projects" element={<ProjectsPage/>} /> 
 
 
         {/* Route for Hobbies page */}
-        <Route path="../Hobbies" element={<Hobbies />} /> 
+        <Route path="../Hobbies" element={<HobbiesPage />} /> 
 
 
 

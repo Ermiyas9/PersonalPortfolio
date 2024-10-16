@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeaderComponents from './Header';
 
-function Hobbies() {
+function HobbiesPage() {
     return (
 
     <div className="hobbies">
@@ -18,4 +18,4 @@ function Hobbies() {
     );
 }
 
-export default Hobbies;
+export default HobbiesPage;

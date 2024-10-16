@@ -11,18 +11,12 @@ import outlookImageIcon from '../images/aboutMePage/outlookImage.png';
 import emailIcon from '../images/aboutMePage/emailImage.png';
 import HeaderComponents from './Header';
 
-const socialMediaIcons = [
-    { src: githubIcon, alt: "GitHub", link: "https://github.com/Ermiyas9" },
-    { src: linkedInIcon, alt: "LinkedIn", link: "https://www.linkedin.com/in/ermiyas-gulti-4ab51521a/" },
-    { src: instaImageIcon, alt: "Instagram", link: "https://www.instagram.com/Ermiyas_g9" },
-    { src: outlookImageIcon, alt: "School Email", link: "mailto:egulti4128@conestogac.on.ca" },
-    { src: emailIcon, alt: "Personal Email", link: "mailto:enduethio@gmail.com" }
-];
 
-function AboutMe() {
+
+function AboutMePage() {
     return (
-        <div className="aboutMe">
-            <HeaderComponents socialMediaIcons={socialMediaIcons}>
+        <div className="AboutMe">
+            <HeaderComponents>
                 <div className="aboutMeContent">
                     <h1>About Me</h1>
                     <p>This is the About Me section.</p>
@@ -33,4 +27,4 @@ function AboutMe() {
 }
 
 
-export default AboutMe;
+export default AboutMePage;
