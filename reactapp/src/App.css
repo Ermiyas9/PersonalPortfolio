@@ -1,5 +1,13 @@
+
+/* General App Container */
+.app-container {
+  width: 100%;
+  height: auto;
+  background: #E8F9FB;
+}
+
 /* Flexbox container for the header (Logo, Menu/Close, Hire Me) */
-#menuDropDown {
+#headerComponents {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,11 +15,10 @@
   border-bottom: 2px solid #ccc;
 }
 
-.aboutMeContent {
-  padding: 20px; 
-  border-radius: 8px; 
+.logo {
+  flex: 1;
+  justify-content: flex-start;
 }
-
 
 /* Logo image styling */
 .logo img {
@@ -20,20 +27,6 @@
   padding-top: 5px;
 }
 
-.logo {
-  flex: 1;
-}
-
-/* Align the logo, menu button, and hire me icon in the first row */
-.menuBtn {
-  flex: 1;
-  text-align: center;
-  color: black;
-  cursor: pointer;
-  font-size: 30px;
-  font-family: Georgia, cursive, sans-serif;
-  font-weight: bold;
-}
 
 .hireMeIcon {
   flex: 1;
@@ -46,6 +39,7 @@
   font-weight: bold;
 }
 
+
 /* Hire me icon image styling */
 .hireMeIcon img {
   width: 50px; 
@@ -53,16 +47,21 @@
   padding-top: 20px;
 }
 
+
+
 /* Second row: Social media icons and menu list */
 .socialMediaAndMenu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /* Space between social icons and menu list */
+  justify-content: space-between; 
   padding-top: 20px;
-  width: 100%; /* Full width to ensure alignment */
+  width: 100%; 
   padding-left: 50px;
   padding-right: 50px;
 }
+
+
+
 
 /* Social media icons styling */
 .socialMediaIconsContainer {
@@ -76,31 +75,86 @@
   height: 30px;
 }
 
-/* Menu list styling */
-.menuList {
+
+/* Menu Items Container */
+.menuItems {
   font-size: 25px;
   font-family: Georgia, cursive, sans-serif;
   font-weight: bold;
   list-style-type: none;
   display: flex;
-  gap: 40px; /* Space between menu items */
-  justify-content: flex-end;
+  gap: 40px; 
+  justify-content: flex-start;
+  
 }
 
-/* General App Container */
-.app-container {
-  width: 100%;
-  height: auto;
-  background: #E8F9FB;
+/* Remove bullet points */
+ul {
+  list-style-type: none; 
+  margin: 0;
 }
+
+li {
+  list-style-type: none; 
+}
+
+/* Remove underline from links */
+a {
+  text-decoration: none; 
+  color: black; 
+  font-weight: bold;
+}
+
+
+/* Add hover effect for links */
+a:hover {
+  color: #007bff; 
+}
+
+/* Flexbox styling for spacing */
+.menuList {
+  display: flex; 
+  gap: 40px; 
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Adjust menu button */
+.menuBtn {
+  flex: 1;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: Georgia, cursive, sans-serif;
+  font-weight: bold;
+
+  margin-bottom: 20px; 
+  padding-left: 250px; /* this isss the space btwn close btn an hireme icon */
+  padding-right: 20px; 
+  padding-top: 20px; 
+  font-size: 50px;
+}
+
+/* Space between list items */
+.menuList li {
+  margin-bottom: 20px; 
+  padding-left: 50px; 
+  padding-right: 20px; 
+  padding-top: 50px; 
+}
+
+
+
 
 /* Change background color of buttons on hover */
 .tablink:hover {
-  background-color: #f1ed15;
-  padding: 5px 10px;
   width: auto;
   height: auto;
   border-radius: 5px;
+  font-size: 25px;
+  font-family: Georgia, cursive, sans-serif;
+  font-weight: bold;
+  list-style-type: none;
 }
 
 /* Default styles for tab content */
@@ -118,6 +172,8 @@
   font-weight: bold;
   margin: 0 120px;
   padding-bottom: 50px;
+  padding-top: 50px;
+  
   text-decoration: none;
   font-size: 25px;
 }
@@ -138,15 +194,11 @@
   color: #007BFF;
 }
 
-/* Remove bullet points from lists */
-ul {
-  list-style-type: none;
+.contentImage {
+  padding-left: 300px;
 }
+ 
 
-/* Menu list item styling */
-.menuList li {
-  margin-bottom: 80px;
-}
 
 .imageAndIntroPara {
   display: flex;
@@ -159,7 +211,4 @@ ul {
   font-size: 20px;
 }
 
-.contentImage {
-  padding-left: 300px;
-}
 

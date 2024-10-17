@@ -2,6 +2,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeaderComponents from './Header';
+import socialMediaIconsDisplay from './socialMediaDisplay';
 
 function WorkExpriencePage() {
     return (
@@ -13,6 +14,8 @@ function WorkExpriencePage() {
            
             </div>
         </HeaderComponents>
+
+        {socialMediaIconsDisplay()}
 
     </div>
     );

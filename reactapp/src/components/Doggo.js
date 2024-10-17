@@ -12,6 +12,7 @@ import instaImageIcon from '../images/aboutMePage/instaImage.png';
 import outlookImageIcon from '../images/aboutMePage/outlookImage.png';
 import emailIcon from '../images/aboutMePage/emailImage.png';
 import HeaderComponents from './Header';
+import socialMediaIconsDisplay from './socialMediaDisplay';
 
 
 function DoggoPage() {
@@ -24,6 +25,8 @@ function DoggoPage() {
            
             </div>
         </HeaderComponents>
+
+        {socialMediaIconsDisplay()}
 
     </div>
 

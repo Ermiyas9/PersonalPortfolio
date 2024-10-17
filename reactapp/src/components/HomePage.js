@@ -5,6 +5,7 @@ import HeaderComponents from './Header';
 //import logo from '../images/homePage/logoImage.png';
 import contentImage from '../images/contentImage.jpg';
 //import hireMeIcon from '../images/homePage/hireMePic.png';
+import socialMediaIconsDisplay from './socialMediaDisplay';
 
 import '../App.css';
 
@@ -15,6 +16,8 @@ function HomePage() {
         <Routes>
           <Route path="/" element={<HeaderComponents />} />
         </Routes>
+
+        {socialMediaIconsDisplay()}
         
       <div className="icon-container">
         <div className="logo">
