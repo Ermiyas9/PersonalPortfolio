@@ -7,6 +7,7 @@ import DoggoPage from './components/Doggo.js';
 import WorkExpriencePage from './components/WorkExprience.js';
 import HobbiesPage from './components/Hobbies.js';
 import ProjectsPage from './components/Projects.js';
+import MenuLists from './components/ListOfMenu'; 
 
 // Create a Layout component where useLocation() can be used
 function Layout() {
@@ -56,6 +57,7 @@ function Layout() {
         <Route path="/WorkExprience" element={<WorkExpriencePage/>} />
         <Route path="/Hobbies" element={<HobbiesPage/>} />
         <Route path="/Projects" element={<ProjectsPage/>} />
+        <Route path="/menu" element={<MenuLists />} /> 
       </Routes>
     </div>
   );
