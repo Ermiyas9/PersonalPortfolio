@@ -32,15 +32,20 @@ function MenuLists() {
       {/* Menu is open initially, showing menu list */}
       <div className="menuItems">
         <ul className="firstList">
-          <li><Link to="/"className="firstList">HOME</Link></li>
+          <li><Link to="/">HOME </Link></li>
           <li><p className="listMsg" >Back to Home page? </p></li>
           <li><Link to="/AboutMe">ABOUT ME</Link></li>
+          <li><p className="listMsg" >Little this to know About me... </p></li>
           <li><Link to="/projects">MY PROJECTS</Link></li>
+          <li><p className="listMsg" >Few of my Acadamic & Personal Projects</p></li>
         </ul>
         <ul className="secondList">
           <li><Link to="/Doggo">MEET MY DOG</Link></li>
+          <li><p className="listMsg" >Meet my bestie </p></li>
           <li><Link to="/WorkExprience">MY EXPERIENCE</Link></li>
+          <li><p className="listMsg" >My Experience in Software Development </p></li>
           <li><Link to="/Hobbies">HOBBIES</Link></li>
+          <li><p className="listMsg" >Things I love to </p></li>
         </ul>
       </div>
     </div>
