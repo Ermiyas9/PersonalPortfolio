@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom'; 
+import simpsonImage from '../images/homerSimpson/simpson.png';
 import '../App.css';
 
 function MenuLists() {
@@ -27,6 +28,14 @@ function MenuLists() {
       >
         {/* Showing Close and display menu lists  from the start cos i have menu button on the prev page */}
         Close
+      </div>
+
+      <div className="simpsonImage">
+        <img 
+          src={simpsonImage} 
+          alt="Homer Simpson Image" 
+          //style={{ display: 'flex', width: '400px', height: 'auto', paddingTop: '20px',alignContent:'center' }} 
+        />
       </div>
 
       {/* Menu is open initially, showing menu list */}

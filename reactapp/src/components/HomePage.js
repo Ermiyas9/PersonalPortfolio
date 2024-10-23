@@ -2,10 +2,13 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import HeaderComponents from './Header';
-//import logo from '../images/homePage/logoImage.png';
 import contentImage from '../images/contentImage.jpg';
-//import hireMeIcon from '../images/homePage/hireMePic.png';
-import socialMediaIconsDisplay from './socialMediaDisplay';
+import logoIcon from '../images/homePage/logoIcon.png';
+import hireMe from '../images/homePage/hireMeIcon.png';
+import outlookImageIcon from '../images/homePage/outlookIcon.png';
+import emailIcon from '../images/homePage/gmailIcon.png';
+import instaImageIcon from '../images/homePage/instaIcon.png';
+import SocialMediaIconsDisplay from './socialMediaDisplay'; 
 
 import '../App.css';
 
@@ -14,10 +17,21 @@ function HomePage() {
     <div className="app-container">
 
         <Routes>
-          <Route path="/" element={<HeaderComponents />} />
+          <Route path="/" element=
+          {   
+            <HeaderComponents 
+                hireMeIcon={hireMe} 
+                logo={logoIcon} 
+            
+          />} />
         </Routes>
 
-        {socialMediaIconsDisplay()}
+           {/* Pass the appropriate icons as props */}
+           <SocialMediaIconsDisplay 
+                outlookIcon={outlookImageIcon} 
+                gmailIcon={emailIcon} 
+                instaIcon={instaImageIcon}
+            />
         
       <div className="icon-container">
         <div className="logo">
@@ -74,7 +88,7 @@ function HomePage() {
       <div className="footerNavLink">
         <Link to="/Projects" className="nav-link">Projects</Link>
         <Link to="/Hobbies" className="nav-link">Hobbies</Link>
-        <Link to="/Doggo" className="nav-link">Meet my Doggo</Link>
+        <Link to="/Doggo" style={{ paddingLeft: '150px' }}>Meet Doggo</Link>
       </div>
 
 

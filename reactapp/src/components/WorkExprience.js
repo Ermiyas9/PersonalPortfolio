@@ -2,20 +2,35 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeaderComponents from './Header';
-import socialMediaIconsDisplay from './socialMediaDisplay';
+import logoIcon from '../images/workPage/logoIcon.png';
+import hireMe from '../images/workPage/hireMeIcon.png';
+import outlookImageIcon from '../images/workPage/outlookIcon.png';
+import emailIcon from '../images/workPage/gmailIcon.png';
+import instaImageIcon from '../images/workPage/instaIcon.png';
+import SocialMediaIconsDisplay from './socialMediaDisplay'; 
 
 function WorkExpriencePage() {
     return (
 
         <div className="Exprience">
         <HeaderComponents >
-            <div className="exprience">
-                <h1>About My Work exprience</h1>
+            <div>
+
+                {/* passing the props to the header component(func) */}
+                <HeaderComponents 
+                    hireMeIcon={hireMe} 
+                    logo={logoIcon} 
+                />
            
             </div>
         </HeaderComponents>
 
-        {socialMediaIconsDisplay()}
+           {/* Pass the appropriate icons as props */}
+           <SocialMediaIconsDisplay 
+                outlookIcon={outlookImageIcon} 
+                gmailIcon={emailIcon}
+                instaIcon={instaImageIcon} 
+            />
 
     </div>
     );

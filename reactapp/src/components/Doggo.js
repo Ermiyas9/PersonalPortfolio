@@ -1,36 +1,31 @@
-
-// Doggo.js
-
-
 import React from "react";
 import { Link } from 'react-router-dom';
-import logo from '../images/aboutMePage/logoImage.png';
-import hireMeIcon from '../images/aboutMePage/hireMePic.png';
-import githubIcon from '../images/aboutMePage/githubImage.png';
-import linkedInIcon from '../images/aboutMePage/linkInImage.png';
-import instaImageIcon from '../images/aboutMePage/instaImage.png';
-import outlookImageIcon from '../images/aboutMePage/outlookImage.png';
-import emailIcon from '../images/aboutMePage/emailImage.png';
 import HeaderComponents from './Header';
-import socialMediaIconsDisplay from './socialMediaDisplay';
-
+import logoIcon from '../images/dogoPage/logoIcon.png';
+import hireMe from '../images/dogoPage/hireMeIcon.png';
+import instaImageIcon from '../images/dogoPage/instaIcon.png';
+import outlookImageIcon from '../images/dogoPage/outlookIcon.png';
+import emailIcon from '../images/dogoPage/gmailIcon.png';
+import SocialMediaIconsDisplay from './socialMediaDisplay'; 
 
 function DoggoPage() {
     return (
+        <div>
 
-    <div className="doggo">
-        <HeaderComponents >
-            <div className="doggoContent">
-                <h1>About My Dog</h1>
-           
-            </div>
-        </HeaderComponents>
-
-        {socialMediaIconsDisplay()}
-
-    </div>
-
+            {/* passing the props to the header component(func) */}
+            <HeaderComponents 
+                hireMeIcon={hireMe} 
+                logo={logoIcon} 
+            />
        
+
+            {/* Pass the appropriate icons as props */}
+            <SocialMediaIconsDisplay 
+                outlookIcon={outlookImageIcon} 
+                gmailIcon={emailIcon} 
+                instaIcon={instaImageIcon}
+            />
+        </div>
     );
 }
 

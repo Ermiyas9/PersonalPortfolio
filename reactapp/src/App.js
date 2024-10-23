@@ -25,6 +25,7 @@ function Layout() {
 
     case '/AboutMe':
       backgroundColor = '#FCDCF1'; 
+    
       break;
 
     case '/Doggo':

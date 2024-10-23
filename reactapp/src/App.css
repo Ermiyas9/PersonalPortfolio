@@ -25,6 +25,7 @@
   width: 75px;
   height: auto;
   padding-top: 5px;
+
 }
 
 
@@ -35,16 +36,17 @@
   align-items: center;
   padding-top: 5px;
   font-size: 30px;
-  font-family: Georgia, cursive, sans-serif;
+  font-family: 'Courier New', monospace; 
   font-weight: bold;
 }
 
 
 /* Hire me icon image styling */
 .hireMeIcon img {
-  width: 50px; 
+  width: 40px; 
   height: auto;
   padding-top: 20px;
+  display: block; 
 }
 
 
@@ -143,13 +145,11 @@ a:hover {
 /* Adjust menu button */
 .menuBtn {
   color: black;
-
   font-size: 60px;
   font-family: 'Courier New', monospace; 
   font-weight: bold;
   padding-left: 450px;
   padding-left: 450px;
-
 }
 
 
@@ -185,11 +185,23 @@ a:hover {
   margin: 0 150px;
   padding-bottom: 50px;
   padding-top: 50px;
-
   transition: none;
-  
   text-decoration: none;
   font-size: 25px;
+}
+
+.footerNavLink{
+
+  padding-left: 20px;
+  font-family: 'Courier New', monospace; 
+  font-weight: bold;
+  margin: 0 150px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  transition: none;
+  text-decoration: none;
+  font-size: 25px;
+
 }
 
 /* Styling for navigation links */
@@ -205,13 +217,19 @@ a:hover {
 
 /* Hover effect for navigation links */
 .nav-link:hover {
-  color: #007BFF;
+  color: #cc0077;
 }
 
 .contentImage {
   padding-left: 300px;
 }
  
+.simpsonImage{
+  display: flex;
+  padding-left: 700px;
+  height: 150px;
+  width:auto;
+}
 
 
 .imageAndIntroPara {
@@ -221,7 +239,7 @@ a:hover {
   margin-top: 80px;
   margin-bottom: 80px;
   padding-left: 300px;
-  font-family: Georgia, cursive, sans-serif;
+  font-family: 'Courier New', monospace; 
   font-size: 20px;
 }
 

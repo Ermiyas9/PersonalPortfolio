@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from 'react-router-dom'; // Use Link to navigate
-import logo from '../images/homePage/logoImage.png';
-import hireMeIcon from '../images/homePage/hireMePic.png';
+import { Link } from 'react-router-dom'; 
+
 
 import '../App.css';
 
-function HeaderComponents() {
+function HeaderComponents({hireMeIcon,logo}) {
   return (
     <div id="headerComponents" className="headerComponents">
       {/* Logo Section */}
@@ -22,7 +21,7 @@ function HeaderComponents() {
             className="hireMeIconImage"
             style={{ width: '100px', height: 'auto', verticalAlign: 'middle' }}
           />
-          <span style={{ marginLeft: '20px', textDecoration: 'none' }}>Hire Me</span>
+          <span style={{ marginLeft: '15px', textDecoration: 'none' }}>Hire Me</span>
         </a>
       </div>
 

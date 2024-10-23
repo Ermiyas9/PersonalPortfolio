@@ -1,16 +1,16 @@
 import React from "react";
 
-import githubIcon from '../images/homePage/githubImage.png';
-import linkedInIcon from '../images/homePage/linkInImage.png';
-import instaImageIcon from '../images/homePage/instaImage.png';
-import outlookImageIcon from '../images/homePage/outlookImage.png';
-import emailIcon from '../images/homePage/emailImage.png';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+
+
 
 import '../App.css'
 
-function socialMediaIconsDisplay() {
+function socialMediaIconsDisplay({ outlookIcon, gmailIcon,instaIcon}) {
     return (
-        <div className="socialMediaIconsContainer" >
+        <div className="socialMediaIconsContainer"  >
 
             {/* Social media icons */}
             <div className="githubIcon">
@@ -19,11 +19,10 @@ function socialMediaIconsDisplay() {
                     className="socialMediaIcons"
                     style={{ textDecoration: 'none', display: 'inline-block' }}
                 >
-                    <img
-                        src={githubIcon}
+                    <FontAwesomeIcon icon={faGithub}
                         alt="GitHub"
                         className="socialMediaIcons"
-                        style={{ verticalAlign: 'middle' }}
+                        style={{ verticalAlign: 'middle',paddingLeft: '10px' }}
                     />
                 </a>
             </div>
@@ -34,11 +33,10 @@ function socialMediaIconsDisplay() {
                     className="socialMediaIcons"
                     style={{ textDecoration: 'none', display: 'inline-block' }}
                 >
-                    <img
-                        src={linkedInIcon}
+                    <FontAwesomeIcon icon={faLinkedin} 
                         alt="LinkedIn"
                         className="socialMediaIcons"
-                        style={{ verticalAlign: 'middle' }}
+                        style={{ color:'#0077B5',verticalAlign: 'middle',paddingLeft: '10px' }}
                     />
                 </a>
             </div>
@@ -50,10 +48,10 @@ function socialMediaIconsDisplay() {
                     style={{ textDecoration: 'none', display: 'inline-block' }}
                 >
                     <img
-                        src={instaImageIcon}
+                        src={instaIcon}
                         alt="Instagram"
                         className="socialMediaIcons"
-                        style={{ verticalAlign: 'middle' }}
+                        style={{ verticalAlign: 'middle',paddingLeft: '10px' }}
                     />
                 </a>
             </div>
@@ -65,10 +63,10 @@ function socialMediaIconsDisplay() {
                     style={{ textDecoration: 'none', display: 'inline-block' }}
                 >
                     <img
-                        src={outlookImageIcon}
+                        src={outlookIcon}
                         alt="School Email"
                         className="socialMediaIcons"
-                        style={{ verticalAlign: 'middle' }}
+                        style={{ verticalAlign: 'middle',paddingLeft: '10px' }}
                     />
                 </a>
             </div>
@@ -80,10 +78,10 @@ function socialMediaIconsDisplay() {
                     style={{ textDecoration: 'none', display: 'inline-block' }}
                 >
                     <img
-                        src={emailIcon}
+                        src={gmailIcon}
                         alt="Personal Email"
                         className="socialMediaIcons"
-                        style={{ verticalAlign: 'middle' }}
+                        style={{ verticalAlign: 'middle',paddingLeft: '10px' }}
                     />
                 </a>
             </div>

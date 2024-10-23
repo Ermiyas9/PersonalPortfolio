@@ -3,7 +3,12 @@
 import React from "react";
 
 import HeaderComponents from './Header';
-import socialMediaIconsDisplay from './socialMediaDisplay';
+import logoIcon from '../images/aboutMePage/logoIcon.png';
+import hireMe from '../images/aboutMePage/hireMeIcon.png';
+import outlookImageIcon from '../images/aboutMePage/outlookIcon.png';
+import emailIcon from '../images/aboutMePage/gmailIcon.png';
+import instaImageIcon from '../images/aboutMePage/instaIcon.png';
+import SocialMediaIconsDisplay from './socialMediaDisplay'; 
 
 
 
@@ -11,12 +16,23 @@ function AboutMePage() {
     return (
         <div className="AboutMe">
             <HeaderComponents>
-                <div className="aboutMeContent">
-                    <h1>About Me</h1>
-                    <p>This is the About Me section.</p>
+                <div>
+
+                    {/* passing the props to the header component(func) */}
+                    <HeaderComponents 
+                        hireMeIcon={hireMe} 
+                        logo={logoIcon} 
+                    />
                 </div>
             </HeaderComponents>
-            {socialMediaIconsDisplay()}
+            
+               {/* Pass the appropriate icons as props */}
+               <SocialMediaIconsDisplay 
+                outlookIcon={outlookImageIcon} 
+                gmailIcon={emailIcon} 
+                instaIcon={instaImageIcon}
+            />
+
         </div>
     );
 }
