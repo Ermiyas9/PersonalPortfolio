@@ -9,6 +9,9 @@ import HobbiesPage from './components/Hobbies.js';
 import ProjectsPage from './components/Projects.js';
 import MenuLists from './components/ListOfMenu'; 
 
+
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
+
 // Create a Layout component where useLocation() can be used
 function Layout() {
   const location = useLocation();
