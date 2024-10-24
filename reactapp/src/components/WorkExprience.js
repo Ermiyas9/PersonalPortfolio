@@ -12,27 +12,27 @@ import SocialMediaIconsDisplay from './socialMediaDisplay';
 function WorkExpriencePage() {
     return (
 
-        <div className="Exprience">
-        <HeaderComponents >
-            <div>
+    <div className="Exprience">
 
-                {/* passing the props to the header component(func) */}
-                <HeaderComponents 
-                    hireMeIcon={hireMe} 
-                    logo={logoIcon} 
-                />
+        {/* passing the props to the header component(func) */}
+        <HeaderComponents 
+            hireMeIcon={hireMe} 
+            logo={logoIcon} 
+        />
            
-            </div>
-        </HeaderComponents>
+           
+       
 
-           {/* Pass the appropriate icons as props */}
-           <SocialMediaIconsDisplay 
-                outlookIcon={outlookImageIcon} 
-                gmailIcon={emailIcon}
-                instaIcon={instaImageIcon} 
-            />
+        {/* Pass the appropriate icons as props */}
+        <SocialMediaIconsDisplay 
+            outlookIcon={outlookImageIcon} 
+            gmailIcon={emailIcon} 
+            instaIcon={instaImageIcon}
+        />
+        
 
     </div>
+    
     );
 }
 

@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
   border-bottom: 2px solid #ccc;
 }
 
@@ -51,7 +51,9 @@
 
 
 
-/* Second row: Social media icons and menu list */
+/* Second row: Social media icons and menu list 
+
+i dont think i need this.. i will delete it later,.nwu*/
 .socialMediaAndMenu {
   display: flex;
   flex-direction: row;

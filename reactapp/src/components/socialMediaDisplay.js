@@ -22,7 +22,7 @@ function socialMediaIconsDisplay({ outlookIcon, gmailIcon,instaIcon}) {
                     <FontAwesomeIcon icon={faGithub}
                         alt="GitHub"
                         className="socialMediaIcons"
-                        style={{ verticalAlign: 'middle',paddingLeft: '10px' }}
+                        style={{ verticalAlign: 'middle',paddingLeft: '10px',paddingTop: '5px' }}
                     />
                 </a>
             </div>
@@ -36,7 +36,7 @@ function socialMediaIconsDisplay({ outlookIcon, gmailIcon,instaIcon}) {
                     <FontAwesomeIcon icon={faLinkedin} 
                         alt="LinkedIn"
                         className="socialMediaIcons"
-                        style={{ color:'#0077B5',verticalAlign: 'middle',paddingLeft: '10px' }}
+                        style={{ color:'#0077B5',verticalAlign: 'middle',paddingLeft: '10px' ,paddingTop: '5px'}}
                     />
                 </a>
             </div>
@@ -51,7 +51,7 @@ function socialMediaIconsDisplay({ outlookIcon, gmailIcon,instaIcon}) {
                         src={instaIcon}
                         alt="Instagram"
                         className="socialMediaIcons"
-                        style={{ verticalAlign: 'middle',paddingLeft: '10px' }}
+                        style={{ verticalAlign: 'middle',paddingLeft: '10px',paddingTop: '5px' }}
                     />
                 </a>
             </div>
@@ -66,7 +66,7 @@ function socialMediaIconsDisplay({ outlookIcon, gmailIcon,instaIcon}) {
                         src={outlookIcon}
                         alt="School Email"
                         className="socialMediaIcons"
-                        style={{ verticalAlign: 'middle',paddingLeft: '10px' }}
+                        style={{ verticalAlign: 'middle',paddingLeft: '10px', paddingTop: '5px' }}
                     />
                 </a>
             </div>
@@ -81,7 +81,7 @@ function socialMediaIconsDisplay({ outlookIcon, gmailIcon,instaIcon}) {
                         src={gmailIcon}
                         alt="Personal Email"
                         className="socialMediaIcons"
-                        style={{ verticalAlign: 'middle',paddingLeft: '10px' }}
+                        style={{ verticalAlign: 'middle',paddingLeft: '10px',paddingTop: '5px' }}
                     />
                 </a>
             </div>

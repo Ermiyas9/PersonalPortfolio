@@ -15,19 +15,18 @@ import SocialMediaIconsDisplay from './socialMediaDisplay';
 function AboutMePage() {
     return (
         <div className="AboutMe">
-            <HeaderComponents>
-                <div>
-
-                    {/* passing the props to the header component(func) */}
-                    <HeaderComponents 
-                        hireMeIcon={hireMe} 
-                        logo={logoIcon} 
-                    />
-                </div>
-            </HeaderComponents>
+        
+            {/* passing the props to the header component(func) */}
+            <HeaderComponents 
+                hireMeIcon={hireMe} 
+                logo={logoIcon} 
+            />
             
-               {/* Pass the appropriate icons as props */}
-               <SocialMediaIconsDisplay 
+            
+        
+
+            {/* Pass the appropriate icons as props */}
+            <SocialMediaIconsDisplay 
                 outlookIcon={outlookImageIcon} 
                 gmailIcon={emailIcon} 
                 instaIcon={instaImageIcon}

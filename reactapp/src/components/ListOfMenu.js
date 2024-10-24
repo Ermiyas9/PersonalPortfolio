@@ -44,7 +44,7 @@ function MenuLists() {
           <li><Link to="/">HOME </Link></li>
           <li><p className="listMsg" >Back to Home page? </p></li>
           <li><Link to="/AboutMe">ABOUT ME</Link></li>
-          <li><p className="listMsg" >Little this to know About me... </p></li>
+          <li><p className="listMsg" >Little Things to know About me... </p></li>
           <li><Link to="/projects">MY PROJECTS</Link></li>
           <li><p className="listMsg" >Few of my Acadamic & Personal Projects</p></li>
         </ul>
@@ -54,7 +54,7 @@ function MenuLists() {
           <li><Link to="/WorkExprience">MY EXPERIENCE</Link></li>
           <li><p className="listMsg" >My Experience in Software Development </p></li>
           <li><Link to="/Hobbies">HOBBIES</Link></li>
-          <li><p className="listMsg" >Things I love to </p></li>
+          <li><p className="listMsg" >Things I love to do to ... </p></li>
         </ul>
       </div>
     </div>
