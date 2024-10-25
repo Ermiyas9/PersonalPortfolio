@@ -5,6 +5,9 @@ import HeaderComponents from './Header';
 import contentImage from '../images/contentImage.jpg';
 import logoIcon from '../images/homePage/logoIcon.png';
 import hireMe from '../images/homePage/hireMeIcon.png';
+import subBuzzPic from '../images/homerSimpson/subBuzz.png';
+
+
 import outlookImageIcon from '../images/homePage/outlookIcon.png';
 import ermiyasPicture from '../images/ermiPics/picsInToronto.JPG';
 import emailIcon from '../images/homePage/gmailIcon.png';
@@ -14,13 +17,10 @@ import SocialMediaIconsDisplay from './socialMediaDisplay';
 // this importt wll be for animated stuff and animate library
 import "animate.css/animate.min.css"; 
 import { AnimatedOnScroll } from 'react-animated-css-onscroll';
-
-
 import '../App.css';
 import { AlignHorizontalCenter } from '@mui/icons-material';
 
 function HomePage() {
-
 
    // ScrollDownAnimation function defined within HomePage this wil be called when I want the scroll down letter to be displayd 
    const ScrollDownAnimation = () => {
@@ -45,22 +45,15 @@ function HomePage() {
             // Stagger each letter's animation
             delay={index * 100} 
             style={{
-
                // vertically displayyy
               display: 'block',
-
               // space btwn letters verticallyyy 
               marginTop: '25px',
               marginLeft: '500px',
-
-              color: "#6A0DAD",
-
+              color: "#2B3A67",
               fontweight:"Bold",
-
               fontSize: "30px",
-             
               fontfamily: "Courier New, monospace"
-
             }}
           >
             {letter}
@@ -71,27 +64,22 @@ function HomePage() {
     );
   };
 
-
   return (
     <div className="app-container">
-
         <Routes>
           <Route path="/" element=
           {   
             <HeaderComponents 
                 hireMeIcon={hireMe} 
                 logo={logoIcon} 
-            
           />} />
         </Routes>
-
            {/* Pass the appropriate icons as props */}
            <SocialMediaIconsDisplay 
                 outlookIcon={outlookImageIcon} 
                 gmailIcon={emailIcon} 
                 instaIcon={instaImageIcon}
             />
-        
       <div className="icon-container">
         <div className="logo">
          
@@ -107,13 +95,12 @@ function HomePage() {
         </div>
       </div>
 
-
       <div>
       
-      <p style={{fontWeight: "bolder", textAlign: "center", color: "#6A0DAD", fontSize: "60px", fontFamily: "Courier New, monospace" }}>
+      <p style={{paddingLeft:"80px", fontWeight: "bolder", textAlign: "left", color: "#2B3A67", fontSize: "40px", fontFamily: "Courier New, monospace" }}>
           Hi, I am Ermiyas. 
       </p>
-      <p style={{textAlign: "center", color: "#6A0DAD", fontSize: "20px", fontFamily: "Courier New, monospace" }}>
+      <p style={{paddingLeft:"80px",textAlign: "lrgy", color: "#2B3A67", fontSize: "20px", fontFamily: "Courier New, monospace" }}>
         I'm an independent creative developer from Kitchener, Ontario.
       </p>
 
@@ -125,69 +112,88 @@ function HomePage() {
             />
         </div>
 
-
- 
-
-
-
-
-
-
-
       </div>
 
-
-      <div className='imageAndIntroPara'>
-        
-
-        <div className="midParagraphTxt">
-          <p>Hello, my name is Ermiyas Gulti.</p>
-          <p>I am a Software Engineering student </p>
-          <p>passionate about coding and technology.</p>
-          <p>I live in Kitchener and I am looking for co-op job.</p>
-        </div>
-      </div>
-
-      <p style={{ fontweight:"Bold",color: "#6A0DAD",fontSize: "30px",      marginTop: '25px',marginLeft: '450px',fontFamily: "Courier New, monospace"}}>
-        SCROLL DOWN
-      </p>
-
-
-  
+      <div 
+        className="imageAndIntroPara"style={{
+        height: 'auto',
+        marginTop: '30px',
+        marginRight: '30px',
+        paddingLeft:"80px",
+        fontFamily: "Courier New, monospace",
+        color: "#2B3A67"}}
+              >
+                <span> 
+                  <p> I’ve been passionate about technology since I was a teenager.</p> 
+                  <p>My love for computers and programming has only grown over the years, </p>
+                  <p> leading me to pursue my dream in software development field. </p>
+                  <p>I truly enjoy writing code, designing front-end interfaces, </p>
+                  <p>and managing back-end systems—all while finding new ways to build applications that make life easier.</p>
+                  <p>I could spend hours solving bugs or refining web designs because it’s what I love to do. </p>
+                  <p><span>Ready to collaborate? </span>
+                    <a
+                      href="mailto:egulti4128@conestogac.on.ca"
+                      style={{
+                        textDecoration: 'none',
+                        color: 'Blue',
+                        fontWeight: 'bold'
+                      }}
+                    >
+                      HIRE ME
+                    </a>
+                    <span>, and let’s build something amazing together!</span>
+                  </p>
+                </span>
+              </div>
+        <p style={{ fontweight:"Bold",color: "#2B3A67",fontSize: "30px",marginTop: '25px',marginLeft: '450px',fontFamily: "Courier New, monospace"}}>
+          SCROLL
+        </p>
 
       {/* calling the function to display the animated scroll letters n */}
       <ScrollDownAnimation /> 
 
 
-
-      
-      <div className="contentImage">
+      <div>
         <img 
-          src={contentImage} 
-          alt="Content" 
-          style={{ display: 'flex', width: '400px', height: 'auto', paddingTop: '50px',alignContent:'center' }} 
+        
+          src={subBuzzPic} 
+          alt="Content"  
+          className="contentImage"
+          style={{ width: '400px',height: '400px',borderRadius: '50%',marginRight: '25px',marginLeft: '5px',marginTop: '25px'
+
+          }}
         />
       </div>
-      <div className='imageAndIntroPara'>
-        <span>
-          <p>I have been passionate about technology since I was a teenager.</p>
-          <p>My love for computers and programming has only grown stronger into adulthood,</p>
-          <p>leading me to pursue my dream in Software Development. I find joy in writing code,</p>
-          <p> designing front-end interfaces, and managing back-end operations, </p>
-          <p> always thinking of new ways to create applications that make life easier. </p>
-          <p>I can spend hours problem-solving bugs or perfecting web designs because it’s what I love. </p>
-          <p> Let’s collaborate HIRE ME?, and let’s build something amazing together!</p>
-        </span>
+
+     
+      <div style={{ fontweight:"Bold",color: "#2B3A67",fontSize: "20px",marginTop: '15px',marginLeft: '50px',fontFamily: "Courier New, monospace"}}>
+        <p><h1> Creating a bank web application was one of my most challenging but rewarding school projects.</h1></p>
+        <p>As a second-year Software Engineering student, our Software Quality professor assigned us a project where we could design our web application, with a few options to choose from. It was a group project, </p>
+        <p>so my partner Saje and I decided to build a banking application. We started by dividing our tasks and creating a project board using Trillo. </p>
+        <p>We used GitHub version control as an additional tool to keep track of our project. We followed the seven software development life cycles to meet all software quality requirements.</p>
+        <p>My primary role was front-end development, but I also contributed to the back-end. This bank application provides basic banking functionality, and we developed it using C# and ASP.NET. </p>
+        <p>You can visit our WealthWave bank application website here, which is connected to a database for full functionality.</p> 
+        <p>Try it out by registering with WealthWave Bank! You can also explore our GitHub repository for more details.</p>
+        <p>Thank you for taking the time to check out our project!</p>
       </div>
 
-      
+
+      <div className="contentImage" >
+        <img 
+          src={contentImage} 
+          alt="Content"  
+          style={{ width: '400px', height: 'auto', marginRight: '25px', marginLeft: '5px' ,marginTop: '25px'}}
+        />
+      </div>
+
+
+
 
       <div className="footerNavLink">
         <Link to="/Projects" className="nav-link">Projects</Link>
         <Link to="/Hobbies" className="nav-link">Hobbies</Link>
         <Link to="/Doggo" style={{ paddingLeft: '150px' }}>Meet Doggo</Link>
       </div>
-
 
     </div>
   );

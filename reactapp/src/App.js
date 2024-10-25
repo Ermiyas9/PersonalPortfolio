@@ -17,7 +17,7 @@ function Layout() {
   const location = useLocation();
 
   // Set a default background color
-  let backgroundColor = '#E8F9FB'; 
+  let backgroundColor = '#FFD470'; 
 
   // Change background color based on the current page or routtee
   switch (location.pathname) 
