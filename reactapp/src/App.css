@@ -236,7 +236,6 @@ a:hover {
 
 .imageAndIntroPara {
   display: flex;
-  font-size: 10px;
   margin-bottom: 20px;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -245,3 +244,25 @@ a:hover {
   font-size: 20px;
 }
 
+/*animations */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.shake-animation {
+  animation: shake 0.5s ease-in-out;
+}
+
+
+.doggoContents{
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding-left: 10px;
+  font-family: 'Courier New', monospace; 
+  font-size: 20px;
+
+}
