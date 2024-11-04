@@ -8,6 +8,8 @@ import outlookImageIcon from '../images/dogoPage/outlookIcon.png';
 import emailIcon from '../images/dogoPage/gmailIcon.png';
 
 import dogPic from '../images/dogoPage/Aaron1.JPG';
+import dogPic1 from '../images/dogoPage/Aaron2.JPG';
+import dogPic2 from '../images/dogoPage/Aaron3.JPG';
 import dogMovie from '../images/dogoPage/aaronChill.mp4';
 
 import SocialMediaIconsDisplay from './socialMediaDisplay'; 
@@ -44,7 +46,8 @@ function DoggoPage() {
                 fontFamily: 'Courier New, monospace',
                 display: 'flex',
                 flexDirection: 'column',
-                alignItems: 'center'
+                alignItems: 'center',
+                lineHeight: '1.0'
             }}>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
                     <p>Yo, what's up 🤗? My name is Aaron; I am a year-and-a-half dog.</p>
@@ -102,12 +105,33 @@ function DoggoPage() {
                 ></iframe>
             </div>
 
-            <div>
-
-                <p className="doggoContents" >
+            <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                paddingLeft: '25px',
+                paddingBottom: '250px',
+                fontSize: '40px',
+                fontWeight: 'Bolder',
+                fontFamily: 'Courier New, monospace',
+                alignItems: 'center' 
+            }}>
+                <p>
                     If you want to keep in touch with me, Follow my Instagram. And Forget what I said. I do love Ermiyas. 
                 </p>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <img 
+                        src={dogPic1} 
+                        alt="A cute dog"  
+                        style={{ width: '400px', height: '600px', marginRight: '100px', marginLeft: '5px', marginTop: '25px' }}
+                    />
+                    <img 
+                        src={dogPic2} 
+                        alt="A cute dog"  
+                        style={{ width: '400px', height: '600px', marginRight: '25px', marginLeft: '5px', marginTop: '25px' }}
+                    />
+                </div>
             </div>
+
 
 
 
