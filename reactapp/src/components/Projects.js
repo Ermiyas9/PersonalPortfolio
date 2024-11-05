@@ -1,6 +1,7 @@
 
 // Projects.js
-import React from 'react';
+
+import React, { useState } from 'react';
 import HeaderComponents from './Header';
 import logoIcon from '../images/projectsPage/logoIcon.png';
 import hireMe from '../images/projectsPage/hireMeIcon.png';
@@ -8,10 +9,19 @@ import outlookImageIcon from '../images/projectsPage/outlookIcon.png';
 import emailIcon from '../images/projectsPage/gmailIcon.png';
 import instaImageIcon from "../images/projectsPage/instaIcon.png";
 import SocialMediaIconsDisplay from './socialMediaDisplay'; 
-import { AlignHorizontalCenter } from '@mui/icons-material';
-import { borderColor, padding } from '@mui/system';
+import reactIcon from '../images/projectsPage/reactIcon.png'; 
+import cSharpIcon from '../images/projectsPage/csharpIcon.png'; 
+import pythonIcon from '../images/projectsPage/pythonIcon.png';
+import djangoIcon from '../images/projectsPage/djangoIcon.png'; 
+import cIcon from '../images/projectsPage/cIcon.png'; 
+import htmlIcon from '../images/projectsPage/htmlIcon.png'; 
+import androidIcon from '../images/projectsPage/androidIcon.png'; 
+//import { AlignHorizontalCenter } from '@mui/icons-material';
+//import { borderColor, fontWeight, padding } from '@mui/system';
 
 function ProjectsPage() {
+
+    const [showTechStack, setShowTechStack] = useState(false);
 
     const containerStyle = {
 
@@ -28,8 +38,8 @@ function ProjectsPage() {
         padding: '75px',
         color: 'black',
         fontSize: '25px',
+        fontWeight:'Bold',
         fontFamily: "'Courier New', monospace",
-        fontWeight: "bold",
         width: '200px',
         textAlign: 'center',
         borderRadius: '5px',
@@ -41,8 +51,12 @@ function ProjectsPage() {
     };
 
     const handleClick = () => {
-        alert("this will be changed, I iwll display like like a text down ");
+
+         // Toggle the display of the tech stack text
+        setShowTechStack(!showTechStack);
     };
+
+
 
 
     
@@ -57,9 +71,6 @@ function ProjectsPage() {
             hireMeIcon={hireMe} 
             logo={logoIcon} 
         />
-           
-           
-       
 
         {/* Pass the appropriate icons as props */}
         <SocialMediaIconsDisplay 
@@ -71,43 +82,93 @@ function ProjectsPage() {
 
         <div style={containerStyle}>
 
-            <div style={boxStyle} onClick={handleClick}>
-               My Personal Portofolio Website 
+            <div className = 'bankApp' style={boxStyle} onClick={handleClick}>
+                <img src={reactIcon} alt="React Icon" style={{ width: '50px', height: '50px' }} />
+                <h2 style={{ margin: '10px 0' }}> My Personal Portfolio Website</h2>
+                {showTechStack && ( 
+                    <p>
+                        Tech Stack : JavaScript, <a href='https://icons8.com/'>icons8</a>, GitHub (for version control)
+                    </p>
+                )}
+                 
+            </div>
 
-               <p>Tech Stack: React JS, GitHub GitHub for version control</p>
-            </div>
             <div style={boxStyle} onClick={handleClick}>
-                Click me!
+                <img src={cSharpIcon} alt="C-Sharp Icon" style={{ width: '50px', height: '50px' }}/>
+                <h2 style={{ margin: '10px 0' }}> Banking Web Application </h2>
+                {showTechStack && ( 
+                    <p>
+                        Teck Stack: C# ASP.NET, MYSQL Database and GitHub (for version control)
+                    </p>)}
             </div>
+
             <div style={boxStyle} onClick={handleClick}>
-                Click me!
+                <img src={pythonIcon} alt="Python Icon" style={{ width: '50px', height: '50px' }}/>
+                <h2 style={{ margin: '10px 0' }}> Fully Functional Network Web App </h2>
+                {showTechStack && (
+                    <p>
+                        Tech Stack: Python Django (Back-End), JavaScript(Front-End), AJAX and GitHub(for version control)
+                    </p>)}
             </div>
+
         </div>
 
         <div style={containerStyle}>
             
             <div style={boxStyle} onClick={handleClick}>
-                Click me!
+                <img src={androidIcon} alt="AndroidStudio Icon" style={{ width: '50px', height: '50px' }}/>
+                <h2 style={{ margin: '10px 0' }}> Android Trip Planner Mobile Application</h2>
+                {showTechStack && (
+                    <p>
+                        Tech Stack : Android Studio, JavaScript, GitHub(for version control)
+                    </p>)}
             </div>
+
             <div style={boxStyle} onClick={handleClick}>
-                Click me!
+                <img src={cIcon} alt="C Language Icon" style={{ width: '50px', height: '50px' }}/>
+                <h2 style={{ margin: '10px 0' }}>Chat System App </h2>
+                {showTechStack && (
+                    <p>
+                        Teck Stack : C and GitHub(for version control)
+                    </p>
+                )}
             </div>
+
             <div style={boxStyle} onClick={handleClick}>
-                Click me!
+                <img src={htmlIcon} alt="html Icon" style={{ width: '50px', height: '50px' }}/>
+                <h2 style={{ margin: '10px 0' }}>Pizza Shop Website</h2>
+                {showTechStack && (
+                    <p>
+                        Teck Stack :JavaScript, HTML and GitHub(for version control)
+                    </p>
+                )}
             </div>
+
         </div>
 
+        <h1 
+            style={{ color: 'black',
+            fontSize: '50px',
+            fontWeight:'Bolder',
+            fontFamily: "'Courier New', monospace",margin: '10px 0',
+            alignContent:'center'
+            }}>
+                A Project Currently in Progress
+        </h1>
+
         <div style={containerStyle}>
+
             
             <div style={boxStyle} onClick={handleClick}>
-                Click me!
+                <img src={djangoIcon} alt="Python Django Icon" style={{ width: '50px', height: '50px' }}/>
+                <h2 style={{ margin: '10px 0' }}>Laptop Rental Kiosk Web Application</h2>
+                {showTechStack && (
+                    <p>
+                        React | Python Django | MySQL | GitHub 
+                    </p>
+                )}
             </div>
-            <div style={boxStyle} onClick={handleClick}>
-                Click me!
-            </div>
-            <div style={boxStyle} onClick={handleClick}>
-                Click me!
-            </div>
+        
         </div>
   
 
