@@ -16,6 +16,8 @@ import djangoIcon from '../images/projectsPage/djangoIcon.png';
 import cIcon from '../images/projectsPage/cIcon.png'; 
 import htmlIcon from '../images/projectsPage/htmlIcon.png'; 
 import androidIcon from '../images/projectsPage/androidIcon.png'; 
+import subBuzzPic from '../images/homerSimpson/subBuzz.png';
+import icons8 from '../images/projectsPage/icons8.png';
 //import { AlignHorizontalCenter } from '@mui/icons-material';
 //import { borderColor, fontWeight, padding } from '@mui/system';
 
@@ -79,6 +81,33 @@ function ProjectsPage() {
             instaIcon={instaImageIcon}
         />
 
+        
+        <h1 
+            style={{ color: 'black',
+            fontSize: '50px',
+            fontWeight:'Bolder',
+            fontFamily: "'Courier New', monospace",margin: '10px 0',
+            alignContent:'center',
+            paddingTop:'50px',
+            paddingLeft:'100px'
+            }}>
+                printf( "Hello World!! \n ");
+        </h1>
+
+
+
+        <div>
+            <img 
+            
+            src={subBuzzPic} 
+            alt="Content"  
+            className="contentImage"
+            style={{ width: '400px',height: '400px',borderRadius: '50%',marginRight: '25px',marginLeft: '5px',marginTop: '25px'
+
+            }}
+            />
+        </div>
+
 
         <div style={containerStyle}>
 
@@ -87,7 +116,7 @@ function ProjectsPage() {
                 <h2 style={{ margin: '10px 0' }}> My Personal Portfolio Website</h2>
                 {showTechStack && ( 
                     <p>
-                        Tech Stack : JavaScript, <a href='https://icons8.com/'>icons8</a>, GitHub (for version control)
+                        Tech Stack    JavaScript, <a href='https://icons8.com/'>icons8</a>, GitHub (for version control)
                     </p>
                 )}
                  
@@ -98,7 +127,7 @@ function ProjectsPage() {
                 <h2 style={{ margin: '10px 0' }}> Banking Web Application </h2>
                 {showTechStack && ( 
                     <p>
-                        Teck Stack: C# ASP.NET, MYSQL Database and GitHub (for version control)
+                        Tech Stack    C#, ASP.NET, MYSQL Database and GitHub (for version control)
                     </p>)}
             </div>
 
@@ -107,7 +136,7 @@ function ProjectsPage() {
                 <h2 style={{ margin: '10px 0' }}> Fully Functional Network Web App </h2>
                 {showTechStack && (
                     <p>
-                        Tech Stack: Python Django (Back-End), JavaScript(Front-End), AJAX and GitHub(for version control)
+                        Tech Stack   Python Django (Back-End), JavaScript(Front-End), AJAX and GitHub(for version control)
                     </p>)}
             </div>
 
@@ -120,7 +149,7 @@ function ProjectsPage() {
                 <h2 style={{ margin: '10px 0' }}> Android Trip Planner Mobile Application</h2>
                 {showTechStack && (
                     <p>
-                        Tech Stack : Android Studio, JavaScript, GitHub(for version control)
+                        Tech Stack   Android Studio, JavaScript, GitHub(for version control)
                     </p>)}
             </div>
 
@@ -129,7 +158,7 @@ function ProjectsPage() {
                 <h2 style={{ margin: '10px 0' }}>Chat System App </h2>
                 {showTechStack && (
                     <p>
-                        Teck Stack : C and GitHub(for version control)
+                        Teck Stack    C and GitHub(for version control)
                     </p>
                 )}
             </div>
@@ -139,39 +168,40 @@ function ProjectsPage() {
                 <h2 style={{ margin: '10px 0' }}>Pizza Shop Website</h2>
                 {showTechStack && (
                     <p>
-                        Teck Stack :JavaScript, HTML and GitHub(for version control)
+                         Tech Stack       JavaScript, HTML and GitHub(for version control)
                     </p>
                 )}
             </div>
 
         </div>
+
+        <img  
+            src={icons8} alt="Icon of coding" style={{paddingBottom: '50px',paddingTop:'50px', paddingLeft:'250px',width: '250px', height: '250px' }}    
+        />
 
         <h1 
             style={{ color: 'black',
             fontSize: '50px',
             fontWeight:'Bolder',
             fontFamily: "'Courier New', monospace",margin: '10px 0',
-            alignContent:'center'
+            paddingLeft:'250px'
             }}>
-                A Project Currently in Progress
+                <p>A Project Currently</p> 
+                <p>in Progress</p>
         </h1>
 
         <div style={containerStyle}>
-
-            
             <div style={boxStyle} onClick={handleClick}>
                 <img src={djangoIcon} alt="Python Django Icon" style={{ width: '50px', height: '50px' }}/>
                 <h2 style={{ margin: '10px 0' }}>Laptop Rental Kiosk Web Application</h2>
                 {showTechStack && (
                     <p>
-                        React | Python Django | MySQL | GitHub 
+                         Tech Stack   React  Python Django  MySQL  GitHub 
                     </p>
                 )}
             </div>
         
         </div>
-  
-
     </div>
     );
 }
