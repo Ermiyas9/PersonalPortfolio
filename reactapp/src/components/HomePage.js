@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import HeaderComponents from './Header';
+import FooterComponents from './Footer';
 import contentImage from '../images/contentImage.jpg';
 import logoIcon from '../images/homePage/logoIcon.png';
 import hireMe from '../images/homePage/hireMeIcon.png';
@@ -193,7 +194,10 @@ function HomePage() {
         <Link to="/Projects" className="nav-link">Projects</Link>
         <Link to="/Hobbies" className="nav-link">Hobbies</Link>
         <Link to="/Doggo" style={{ paddingLeft: '150px' }}>Meet Doggo</Link>
-      </div>
+      </div> 
+
+      {/* calling footer component for the webste footer contents */}
+      <FooterComponents/>
 
     </div>
   );

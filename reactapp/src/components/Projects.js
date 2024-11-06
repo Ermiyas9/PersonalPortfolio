@@ -3,6 +3,7 @@
 
 import React, { useState } from 'react';
 import HeaderComponents from './Header';
+import FooterComponents from "./Footer";
 import logoIcon from '../images/projectsPage/logoIcon.png';
 import hireMe from '../images/projectsPage/hireMeIcon.png';
 import outlookImageIcon from '../images/projectsPage/outlookIcon.png';
@@ -202,6 +203,10 @@ function ProjectsPage() {
             </div>
         
         </div>
+
+
+             {/* calling footer component for the webste footer contents */}
+             <FooterComponents/>
     </div>
     );
 }

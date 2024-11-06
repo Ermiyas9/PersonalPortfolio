@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import HeaderComponents from './Header';
-import FooterComponents from '.Footer';
+import FooterComponents from './Footer';
 import logoIcon from '../images/dogoPage/logoIcon.png';
 import hireMe from '../images/dogoPage/hireMeIcon.png';
 import instaImageIcon from '../images/dogoPage/instaIcon.png';
@@ -135,12 +135,8 @@ function DoggoPage() {
 
 
 
-            {/* passing the props to the header component(func) */}
-            <FooterComponents
-                hireMeIcon={hireMe} 
-                logo={logoIcon} 
-            />
-
+            {/* calling footer component for the webste footer contents */}
+            <FooterComponents/>
         </div>
     );
 }

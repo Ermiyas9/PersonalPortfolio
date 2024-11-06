@@ -163,11 +163,9 @@ a:hover {
   font-size: 20px;
   font-weight: normal;
   padding: 1%;
-  padding-left: 100px;
+  padding-left: 100px; 
+  box-shadow: 1px 5px 5px -3px #F71B9D;
 }
-
-
-
 
 
 

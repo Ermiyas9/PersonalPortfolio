@@ -2,6 +2,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeaderComponents from './Header';
+import FooterComponents from './Footer';
 import logoIcon from '../images/workPage/logoIcon.png';
 import hireMe from '../images/workPage/hireMeIcon.png';
 import outlookImageIcon from '../images/workPage/outlookIcon.png';
@@ -29,7 +30,10 @@ function WorkExpriencePage() {
             gmailIcon={emailIcon} 
             instaIcon={instaImageIcon}
         />
-        
+
+
+             {/* calling footer component for the webste footer contents */}
+             <FooterComponents/>
 
     </div>
     

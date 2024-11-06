@@ -2,6 +2,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeaderComponents from './Header';
+import FooterComponents from './Footer';
+
 import logoIcon from '../images/hobbiesPage/logoIcon.png';
 import hireMe from '../images/hobbiesPage/hireMeIcon.png';
 import outlookImageIcon from '../images/hobbiesPage/outlookIcon.png';
@@ -25,6 +27,8 @@ function HobbiesPage() {
                 gmailIcon={emailIcon} 
                 instaIcon={instaImageIcon}
             />
+            {/* calling footer component for the webste footer contents */}
+            <FooterComponents/>
         </div>
     );
 }

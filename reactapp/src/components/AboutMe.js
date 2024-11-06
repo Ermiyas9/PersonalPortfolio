@@ -5,6 +5,7 @@ import { AnimatedOnScroll } from 'react-animated-css-onscroll';
 import { Link } from 'react-router-dom';
 
 import HeaderComponents from './Header';
+import FooterComponents from './Footer';
 import logoIcon from '../images/aboutMePage/logoIcon.png';
 import hireMe from '../images/aboutMePage/hireMeIcon.png';
 import outlookImageIcon from '../images/aboutMePage/outlookIcon.png';
@@ -198,6 +199,11 @@ function AboutMePage() {
                 <Link to="/Projects" className="nav-link"> Visit My Projects</Link></p>
             
             </div>
+
+            {/* calling footer component for the webste footer contents */}
+            <FooterComponents/>
+
+            
 
         </div>
 
