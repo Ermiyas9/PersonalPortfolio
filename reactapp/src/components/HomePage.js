@@ -202,9 +202,21 @@ function HomePage() {
       </div>
 
 
+      <div style = {{ fontweight:"Bold",color: "#2B3A67",fontSize: "20px",marginTop: '15px',marginLeft: '50px',fontFamily: "Courier New, monospace"}}>
+
+        <p><h1>Recent Project...! Under PROCESS</h1></p>
+        <p>While working at Conestoga College's Doon campus for my first co-op term, I developed an idea for improving the kiosk that loans laptops to students for a limited period.</p>
+        <p>This kiosk is powered by software with limited functionality despite its regular use.</p>
+        <p>I plan to upgrade the kiosk software to improve its functions and to write its code using Python Django and Assembly language, which will help me improve my knowledge while writing the code.</p>
+        <p>My idea was to design a kiosk system with three indicator lights to communicate the laptop's status: red for when a laptop is successfully returned, blue for when a laptop is currently charging or in the process of being loaned out, and green to indicate that a laptop is ready for checkout.</p>
+        <p>The current software only uses two indicator lights, so I planned to upgrade the version to offer better functionality and a more user-friendly interface.</p>
+        <p>Assembly language seems to be an excellent tool for designing the software lights.</p>
+      </div>
 
 
-      <div className="footerNavLink">
+
+
+      <div className="footerNavLink"style={{ paddingTop: '250px',paddingBottom: '250px' }}>
         <Link to="/Projects" className="nav-link">Projects</Link>
         <Link to="/Hobbies" className="nav-link">Hobbies</Link>
         <Link to="/Doggo" style={{ paddingLeft: '150px' }}>Meet Doggo</Link>
