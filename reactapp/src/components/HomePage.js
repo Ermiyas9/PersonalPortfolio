@@ -6,7 +6,7 @@ import FooterComponents from './Footer';
 import contentImage from '../images/contentImage.jpg';
 import logoIcon from '../images/homePage/logoIcon.png';
 import hireMe from '../images/homePage/hireMeIcon.png';
-import subBuzzPic from '../images/homerSimpson/subBuzz.png';
+import bankTellerImage from '../images/homePage/bankAndTeller.png';
 
 
 import outlookImageIcon from '../images/homePage/outlookIcon.png';
@@ -105,15 +105,23 @@ function HomePage() {
         I'm an independent creative developer from Kitchener, Ontario.
       </p>
 
-      <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '20px' }}>
-            <img 
-                src={ermiyasPicture} 
-                alt="Content" 
-                style={{ width: '350px', height: 'auto' }} 
-            />
-        </div>
 
+        {/* added border and bordr radius for my photo .. more like frame by adding inline cs styling */}
+        <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '20px' }}>
+          <img 
+              src={ermiyasPicture} 
+              alt="Content" 
+              style={{
+                  width: '350px', 
+                  height: 'auto',
+                  border: '8px solid #4FBEF2', 
+                  borderRadius: '10px',
+                  boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.2)'
+              }} 
+          />
+        </div>
       </div>
+
 
       <div 
         className="imageAndIntroPara"style={{
@@ -157,7 +165,7 @@ function HomePage() {
       <div>
         <img 
         
-          src={subBuzzPic} 
+          src={bankTellerImage } 
           alt="Content"  
           className="contentImage"
           style={{ width: '400px',height: '400px',borderRadius: '50%',marginRight: '25px',marginLeft: '5px',marginTop: '25px'
@@ -176,6 +184,12 @@ function HomePage() {
         <p>You can visit our WealthWave bank application website here, which is connected to a database for full functionality.</p> 
         <p>Try it out by registering with WealthWave Bank! You can also explore our GitHub repository for more details.</p>
         <p>Thank you for taking the time to check out our project!</p>
+      </div>
+
+      <div style={{paddingLeft: '250px',fontFamily: "'Courier New', monospace ",fontWeight:'bolder',fontSize:'35px' }}>
+        <p><a href='https://github.com/srose0040/WealthWave'style={{boxShadow:" 1px 5px 5px -3px #F71B9D",textDecoration: 'none'}}> Git Hub Repo </a></p>
+        <p><a href='https://wealthywave.Azurewebsites.net'style={{ boxShadow:" 1px 5px 5px -3px #F71B9D",textDecoration: 'none',}}>Wealthy Wave Bank </a></p>
+        <p><Link to="/Projects" style={{ boxShadow:" 1px 5px 5px -3px #F71B9D",textDecoration: 'none',}}>More Of My Projects </Link></p>
       </div>
 
 
