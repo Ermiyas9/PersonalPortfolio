@@ -213,10 +213,23 @@ function HomePage() {
         <p>Assembly language seems to be an excellent tool for designing the software lights.</p>
       </div>
 
+      <div style={{paddingTop: '75px',paddingBottom: '75px',paddingLeft: '250px',fontFamily: "'Courier New', monospace ",fontWeight:'bolder',fontSize:'35px' }}>
+        <p><a href='https://github.com/Ermiyas9/LaptopRentalKiosk'style={{boxShadow:" 1px 5px 5px -3px #F71B9D",textDecoration: 'none'}}> Git Hub Repo </a></p>
+        <p><a href='https://wealthywave.Azurewebsites.net'style={{ boxShadow:" 1px 5px 5px -3px #F71B9D",textDecoration: 'none',}}>Laptop Rental Kiosk </a></p>
+        <p><Link to="/Projects" style={{ boxShadow:" 1px 5px 5px -3px #F71B9D",textDecoration: 'none',}}>More Of My Projects </Link></p>
+      </div>
+
+      <p style={{ fontweight:"Bold",color: "#2B3A67",fontSize: "30px",marginTop: '25px',marginLeft: '450px',fontFamily: "Courier New, monospace"}}>
+          SCROLL
+        </p>
+
+      {/* calling the function to display the animated scroll letters n */}
+      <ScrollDownAnimation /> 
 
 
 
-      <div className="footerNavLink"style={{ paddingTop: '250px',paddingBottom: '250px' }}>
+
+      <div className="footerNavLink"style={{ paddingTop: '150px',paddingBottom: '150px' }}>
         <Link to="/Projects" className="nav-link">Projects</Link>
         <Link to="/Hobbies" className="nav-link">Hobbies</Link>
         <Link to="/Doggo" style={{ paddingLeft: '150px' }}>Meet Doggo</Link>
