@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+
 import HeaderComponents from './Header';
 import FooterComponents from './Footer';
 import logoIcon from '../images/dogoPage/logoIcon.png';

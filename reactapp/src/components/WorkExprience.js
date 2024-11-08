@@ -1,6 +1,7 @@
 // WorkExprience.js
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import HeaderComponents from './Header';
 import FooterComponents from './Footer';
 import logoIcon from '../images/workPage/logoIcon.png';
@@ -11,14 +12,20 @@ import instaImageIcon from '../images/workPage/instaIcon.png';
 import SocialMediaIconsDisplay from './socialMediaDisplay'; 
 
 // programming languages icons
-import reactIcon from '../images/projectsPage/reactIcon.png'; 
 import cSharpIcon from '../images/workPage/cSharpIcon.png'; 
 import cPlusPlusIcon from '../images/workPage/cPlusIcon.png'; 
-import pythonIcon from '../images/projectsPage/pythonIcon.png';
-import djangoIcon from '../images/projectsPage/djangoIcon.png'; 
+import pythonIcon from '../images/workPage/pythonIcon.png';
+import reactIcon from '../images/workPage/reactIcon.png'; 
+import djangoIcon from '../images/workPage/djangoIcon.png'; 
 import cIcon from '../images/workPage/cIcon.png'; 
-import htmlIcon from '../images/projectsPage/htmlIcon.png'; 
-import androidIcon from '../images/projectsPage/androidIcon.png'; 
+import htmlIcon from '../images/workPage/htmlIcon.png'; 
+import androidIcon from '../images/workPage/androidIcon.png'; 
+import phpIcon from '../images/workPage/phpIcon.png'; 
+import sqlIcon from '../images/workPage/sqlIcon.png'; 
+import mySqlIcon from '../images/workPage/mySqlIcon.png'; 
+import assemblyIcon from '../images/workPage/assemblyIcon.png'; 
+import blackDudeImage from '../images/workPage/blackDudeImage.png'; 
+import youngBlackMan from '../images/workPage/youngBlackMan.png'; 
 
 function WorkExpriencePage() {
     return (
@@ -41,34 +48,150 @@ function WorkExpriencePage() {
             instaIcon={instaImageIcon}
         />
 
-        <div>
-            <p className='titles'> Technical Skills </p>
-            <p className='subTitles'>Programming Languages</p>
+        <img 
+            src={blackDudeImage} 
+            alt="Content"  
+            className="contentImage"
+            style={{ paddingLeft: '550px',width: '400px', height: '400px' }}
+        />
 
+
+        
+
+        <div>
+            <p className='titles'> 💻 Technical Skills </p>
+            <p className='subTitles'>Programming Languages / Frameworks</p>
+
+            
             <img 
                 src={cIcon} 
                 alt="Content"  
                 className="contentImage"
-                style={{ width: '50px', height: '50px' }}
+                style={{paddingTop: '15', paddingRight: '5',paddingLeft: '5',width: '50px', height: '50px' }}
             />
 
             <img 
-                src={cPlusPlusIcon} 
+                 src={cPlusPlusIcon}  
                 alt="Content"  
                 className="contentImage"
-                style={{ width: '50px', height: '50px' }}
+                style={{paddingTop: '15', paddingRight: '5',paddingLeft: '5',width: '50px', height: '50px' }}
             />
 
             <img 
                 src={cSharpIcon} 
                 alt="Content"  
                 className="contentImage"
-                style={{paddingTop: '15', paddingRight: '15',paddingLeft: '15',width: '50px', height: '50px' }}
+                style={{paddingTop: '5', paddingRight: '5',paddingLeft: '5',width: '50px', height: '50px' }}
+            />
+
+            <img 
+                src={assemblyIcon} 
+                alt="Content"  
+                className="contentImage"
+                style={{paddingTop: '5', paddingRight: '5',paddingLeft: '5',width: '50px', height: '50px' }}
             />
         </div>
 
+        
+        <div>
+            <img 
+                src={reactIcon} 
+                alt="Content"  
+                className="contentImage"
+                style={{paddingTop: '5', paddingRight: '5',paddingLeft: '5',width: '50px', height: '50px' }}
+            />
 
+            <img 
+                src={pythonIcon} 
+                alt="Content"  
+                className="contentImage"
+                style={{paddingTop: '5', paddingRight: '5',paddingLeft: '5',width: '50px', height: '50px' }}
+            />
+
+            <img 
+                src={androidIcon} 
+                alt="Content"  
+                className="contentImage"
+                style={{paddingTop: '5', paddingRight: '5',paddingLeft: '5',width: '50px', height: '50px' }}
+            />
+
+            <img 
+                src={phpIcon} 
+                alt="Content"  
+                className="contentImage"
+                style={{paddingTop: '5', paddingRight: '5',paddingLeft: '5',width: '50px', height: '50px' }}
+            />
+      
+        </div>
+
+        
+        <div>
+
+            <img 
+                src={djangoIcon} 
+                alt="Content"  
+                className="contentImage"
+                style={{paddingTop: '15', paddingRight: '5',paddingLeft: '5',width: '50px', height: '50px' }}
+            />
+
+            <img 
+                src={htmlIcon} 
+                alt="Content"  
+                className="contentImage"
+                style={{paddingTop: '5', paddingRight: '5',paddingLeft: '5',width: '50px', height: '50px' }}
+            />
+
+            <img 
+                src={mySqlIcon} 
+                alt="Content"  
+                className="contentImage"
+                style={{paddingTop: '5', paddingRight: '5',paddingLeft: '5',width: '50px', height: '50px' }}
+            />
+
+            <img 
+                src={sqlIcon} 
+                alt="Content"  
+                className="contentImage"
+                style={{paddingTop: '5', paddingRight: '5',paddingLeft: '5',width: '50px', height: '50px' }}
+            />
        
+        </div>   
+        
+        <p className='titles'> 📝 Education </p>
+        <p className='subTitles'>Advanced Diploma in Software Engineering Candidate</p>
+        <p style= {{paddingLeft: '150px'}}className='subTitles'> 🎓 Conestoga College, Waterloo | Sep. 2022 – Present | GPA 3.81</p>
+        <p className='subTitles'>Diploma in Information Communication Technology</p>
+        <h5><p style= {{paddingLeft: '150px'}}className='subTitles'>  🎓 Royal University College—Nazareth Ethiopia and Asella TVET Institute | Sep 2007 – July 2010 | GPA 3.85</p></h5>
+        
+
+        <p className='titles'> 🚀 Technical Experience </p>
+        <p className='subTitles'style= {{paddingLeft: '150px'}}>🌟 Tech Representative, Conestoga College (Co-op) | Sep 2024 – Present</p>
+        <p className='subTitles'style= {{paddingLeft: '150px'}}>🌟 Warehouse Worker, Grand River Personnel, Kitchener, ON | 2023</p>
+        <p className='subTitles'style= {{paddingLeft: '150px'}}>🌟 Crew Member, McDonald’s, Kitchener, ON | 2020 – 2021</p>
+        <p className='subTitles'style= {{paddingLeft: '150px'}}>🌟 Customer Service & Delivery Driver, Carriage & Talabat Delivery Company | 2016 - 2019</p>
+        <p className='subTitles'style= {{paddingLeft: '150px'}}>🌟 Salesperson, Avenue Mall, Kuwait | 2014 - 2015</p>
+        <p className='subTitles'style= {{paddingLeft: '150px'}}>🌟 IT Instructor, National College Addis Abeba, Ethiopia | 2012</p>
+        <p className='subTitles'style= {{paddingLeft: '150px'}}>🌟 Assistant IT Instructor, Rehoboth Medical College Asella, Ethiopia | 2010 – 2011</p>
+
+
+
+
+        <img 
+            src={youngBlackMan} 
+            alt="Content"  
+            className="contentImage"
+            style={{ paddingLeft: '550px',width: '500px', height: '400px' }}
+        />
+
+
+        <div style={{paddingTop: '75px',paddingBottom: '75px',paddingLeft: '250px',fontFamily: "'Courier New', monospace ",fontWeight:'bolder',fontSize:'35px' }}>
+            <p><a href='https://github.com/Ermiyas9/LaptopRentalKiosk'style={{boxShadow:" 1px 5px 5px -3px green",textDecoration: 'none'}}> Get My Resume </a></p>
+            <p><a href='https://wealthywave.Azurewebsites.net'style={{ boxShadow:" 1px 5px 5px -3px green",textDecoration: 'none',}}>Get my Recent Achievement Paper </a></p>
+            <p><Link to="/Projects" style={{ boxShadow:" 1px 5px 5px -3px green",textDecoration: 'none',}}>Check out my projects </Link></p>
+        </div>
+
+
+
 
 
 

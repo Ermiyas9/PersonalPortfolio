@@ -256,7 +256,7 @@ a:hover {
 .titles{
 font-family: 'Courier New', monospace; 
 text-decoration: none;
-padding-bottom: 50px;
+padding-bottom: 25px;
 padding-top: 50px;
 padding-left: 50px;
 font-size: 50px;
@@ -267,9 +267,10 @@ font-weight: bolder;
 .subTitles{
   font-family: 'Courier New', monospace; 
   text-decoration: none;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   padding-left: 75px;
+  padding-top: 25px;
   font-size: 35px;
   color: black;
-  font-weight: bold;
+  font-weight: bolder;
   }
