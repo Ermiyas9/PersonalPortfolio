@@ -1,6 +1,6 @@
 // WorkExprience.js
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+
 import { Link } from 'react-router-dom';
 import HeaderComponents from './Header';
 import FooterComponents from './Footer';
@@ -28,6 +28,38 @@ import blackDudeImage from '../images/workPage/blackDudeImage.png';
 import youngBlackMan from '../images/workPage/youngBlackMan.png'; 
 
 function WorkExpriencePage() {
+
+    useEffect(() => {
+        // Add event listener after component mounts
+        const downloadButton = document.getElementById("downloadButton");
+        if (downloadButton) {
+          downloadButton.addEventListener("click", function () {
+
+            // Path relative to the public folder
+            const pdfUrl = "/ErmiyasResume.pdf"; 
+    
+            // Create an  element to trigger the download
+            const link = document.createElement("a");
+            link.href = pdfUrl;
+
+            // Custom download file name
+            link.download = "ErmiyasResume.pdf"; 
+    
+            // Append the link to the document body, click it, and remove it
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          });
+        }
+    
+        // Cleanup the event listener when component unmounts
+        return () => {
+          if (downloadButton) {
+            downloadButton.removeEventListener("click", function () {});
+          }
+        };
+      }, []);
+
     return (
 
     <div className="Exprience">
@@ -184,11 +216,63 @@ function WorkExpriencePage() {
         />
 
 
-        <div style={{paddingTop: '75px',paddingBottom: '75px',paddingLeft: '250px',fontFamily: "'Courier New', monospace ",fontWeight:'bolder',fontSize:'35px' }}>
-            <p><a href='https://github.com/Ermiyas9/LaptopRentalKiosk'style={{boxShadow:" 1px 5px 5px -3px green",textDecoration: 'none'}}> Get My Resume </a></p>
-            <p><a href='https://wealthywave.Azurewebsites.net'style={{ boxShadow:" 1px 5px 5px -3px green",textDecoration: 'none',}}>Get my Recent Achievement Paper </a></p>
-            <p><Link to="/Projects" style={{ boxShadow:" 1px 5px 5px -3px green",textDecoration: 'none',}}>Check out my projects </Link></p>
-        </div>
+<div
+  style={{
+    paddingTop: '75px',
+    paddingBottom: '75px',
+    paddingLeft: '250px',
+    fontFamily: "'Courier New', monospace",
+    fontWeight: 'bolder',
+    fontSize: '35px',
+  }}
+>
+  <button
+    id="downloadButton"
+    style={{
+      display: 'block', 
+      fontSize: '35px',
+      color: 'blue',
+      fontWeight: 'bold',
+      fontFamily: "'Courier New', monospace",
+      boxShadow: '1px 5px 5px -3px green',
+      textDecoration: 'none',
+      padding: '10px 20px',
+      marginBottom: '20px', 
+      backgroundColor: '#C6B1F3',
+      border: 'none',
+      borderRadius: '5px',
+      cursor: 'pointer',
+    }}
+  >
+   Resume
+  </button>
+
+  <button
+    id="downloadButton"
+    style={{
+      display: 'block', 
+      fontSize: '35px',
+      color: 'blue',
+      fontWeight: 'bold',
+      fontFamily: "'Courier New', monospace",
+      boxShadow: '1px 5px 5px -3px green',
+      textDecoration: 'none',
+      padding: '10px 20px',
+      marginBottom: '20px', 
+      backgroundColor: '#C6B1F3',
+      border: 'none',
+      borderRadius: '5px',
+      cursor: 'pointer',
+    }}
+  >
+   Achievement Paper
+  </button>
+
+  <p><Link to="/Projects" style={{ color:'blue',boxShadow:" 1px 5px 5px -3px green",textDecoration: 'none',}}>More Of My Projects </Link></p>
+
+ 
+</div>
+
 
 
 
