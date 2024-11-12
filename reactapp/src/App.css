@@ -267,10 +267,21 @@ font-weight: bolder;
 .subTitles{
   font-family: 'Courier New', monospace; 
   text-decoration: none;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   padding-left: 75px;
-  padding-top: 25px;
-  font-size: 35px;
+  padding-top: 10px;
+  font-size: 25px;;
   color: black;
-  font-weight: bolder;
+  font-weight: bold;
   }
+
+  .subSecTitle{
+    font-family: 'Courier New', monospace; 
+    text-decoration: none;
+    padding-bottom: 10px;
+    padding-left: 75px;
+    padding-top: 10px;
+    font-size: 25px;
+    color: black;
+    }
+    
