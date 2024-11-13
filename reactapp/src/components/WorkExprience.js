@@ -140,6 +140,15 @@ function WorkExpriencePage() {
         />
       </div>
 
+      <div>
+        <p className="titles"> 🔍 Learning Skills </p>
+        <p className="subTitles">From Documentation and Online Recourses </p>
+        <p className="subSecTitle" style={{ paddingLeft: '150px' }}>📚 Succeed in solving code issues and bugs efficiently</p>
+        <p className="subSecTitle" style={{ paddingLeft: '150px' }}>📚 Draw on a quick learning ability to navigate documentation, Stack Overflow, and other online resources easily</p>
+        <p className="subSecTitle" style={{ paddingLeft: '150px' }}>📚 Troubleshoot complex problems and optimize code effectively</p>
+        <p className="subSecTitle" style={{ paddingLeft: '150px' }}>📚 Find solutions fast to keep projects moving forward smoothly</p>
+      </div>
+
       <p className="titles"> 📝 Education </p>
       <p className="subTitles">Advanced Diploma in Software Engineering Candidate</p>
       <p style={{ paddingLeft: '150px' }} className="subSecTitle"> 🎓 Conestoga College, Waterloo | Sep. 2022 – Present | GPA 3.81</p>

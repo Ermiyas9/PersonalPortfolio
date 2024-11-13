@@ -9,6 +9,11 @@ import outlookImageIcon from '../images/hobbiesPage/outlookIcon.png';
 import emailIcon from '../images/hobbiesPage/gmailIcon.png';
 import instaImageIcon from '../images/hobbiesPage/instaIcon.png';
 import SocialMediaIconsDisplay from './socialMediaDisplay';
+import coding from '../images/hobbiesPage/coding.png';
+import running from '../images/hobbiesPage/running.png';
+import movies from '../images/hobbiesPage/movies.png';
+import doggg from '../images/hobbiesPage/dog.png';
+import musika from '../images/hobbiesPage/music.png';
 
 import './HobbiesPage.css'; // Make sure to add some CSS for styling
 
@@ -46,7 +51,7 @@ function HobbiesPage() {
                 <h2>What I Love Doing</h2>
                 
                 <div className="hobby-item">
-                    <img src="path/to/coding-image.jpg" alt="Coding" className="hobby-image" />
+                    <img src={coding} alt="Coding" className="hobby-image" />
                     <div className="hobby-description">
                         <h3>Coding & Tech</h3>
                         <p>
@@ -56,7 +61,7 @@ function HobbiesPage() {
                 </div>
 
                 <div className="hobby-item">
-                    <img src="path/to/photography-image.jpg" alt="Photography" className="hobby-image" />
+                    <img src={running} alt="Runners" className="hobby-image" />
                     <div className="hobby-description">
                         <h3>Running </h3>
                         <p>
@@ -69,7 +74,7 @@ function HobbiesPage() {
                 </div>
 
                 <div className="hobby-item">
-                    <img src="path/to/reading-image.jpg" alt="Reading" className="hobby-image" />
+                    <img src={movies} alt="Movies Image" className="hobby-image" />
                     <div className="hobby-description">
                         <h3>Watching Movies</h3>
                         <p>
@@ -79,7 +84,7 @@ function HobbiesPage() {
                 </div>
 
                 <div className="hobby-item">
-                    <img src="path/to/reading-image.jpg" alt="Reading" className="hobby-image" />
+                    <img src={doggg} alt="dogg image" className="hobby-image" />
                     <div className="hobby-description">
                         <h3>Spending Time With Dogs </h3>
                         <p>
@@ -93,7 +98,7 @@ function HobbiesPage() {
                 </div>
 
                 <div className="hobby-item">
-                    <img src="path/to/reading-image.jpg" alt="Reading" className="hobby-image" />
+                    <img src={musika} alt="musika" className="hobby-image" />
                     <div className="hobby-description">
                         <h3>Musics  </h3>
                         <p>

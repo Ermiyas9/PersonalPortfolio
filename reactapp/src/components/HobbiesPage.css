@@ -34,7 +34,7 @@
 }
 
 .hobby-item {
-    background-color: #fff;
+    background-color:#F4B8B8;
     padding: 20px;
     width: 250px;
     border-radius: 8px;
@@ -48,8 +48,8 @@
 }
 
 .hobby-image {
-    width: 100%;
-    height: auto;
+    width: 250px;
+    height: 250px;
     border-radius: 8px;
     margin-bottom: 15px;
 }

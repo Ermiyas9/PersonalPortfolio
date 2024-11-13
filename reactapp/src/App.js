@@ -47,6 +47,10 @@ function Layout() {
       backgroundColor = '#A5F5DA'; 
       break;
 
+    case '/menu':
+      backgroundColor ='#7CBAA6'
+      break;
+
     default:
       backgroundColor =  '#E8F9FB'; 
       break;
