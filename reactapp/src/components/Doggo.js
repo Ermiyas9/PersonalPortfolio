@@ -1,5 +1,4 @@
-import React from "react";
-
+import React from "react"; 
 import HeaderComponents from './Header';
 import FooterComponents from './Footer';
 import logoIcon from '../images/dogoPage/logoIcon.png';
@@ -18,125 +17,69 @@ import SocialMediaIconsDisplay from './socialMediaDisplay';
 function DoggoPage() {
     return (
         <div>
-
-            {/* passing the props to the header component(func) */}
+            {/* Header component */}
             <HeaderComponents 
                 hireMeIcon={hireMe} 
                 logo={logoIcon} 
             />
 
-            {/* Pass the appropriate icons as props */}
+            {/* Social Media Icons */}
             <SocialMediaIconsDisplay 
                 outlookIcon={outlookImageIcon} 
                 gmailIcon={emailIcon} 
                 instaIcon={instaImageIcon}
             />
-            
-            <div className="doggoContents" style={{ fontSize:'40px',fontWeight:'Bolder',fontFamily:'Courier New, monospace ',display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <p><h1>Hey There!</h1> </p>
 
+            {/* Introduction Section */}
+            <div className="doggoContents" style={{ fontSize:'40px', fontWeight:'bolder', fontFamily:'Courier New, monospace', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
+                <h1>Hey There!</h1>
                 <img 
                     src={dogPic} 
                     alt="Dog Picture"  
-                    style={{alignItems:'center', width: '500px', height: '600px', borderRadius: '50%', marginRight: '25px', marginLeft: '5px', marginTop: '25px' }}
+                    style={{ width: '420px', height: '500px', borderRadius: '50%', boxShadow: '0 4px 10px rgba(0,0,0,0.2)', marginBottom: '20px' }}
                 />
-            </div>
-
-            <div className="dogMsg" style={{
-                fontSize: '25px',
-                fontFamily: 'Courier New, monospace',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                lineHeight: '1.0'
-            }}>
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-                    <p>Yo, what's up 🤗? My name is Aaron; I am a year-and-a-half dog.</p>
-                    <p>Still a puppy 🥰. I live with my best friend Ermiyas.</p>
-                    <p>I don't want to take your time by telling you how Ermi takes my personal space.</p>
-                    <p>If you don't hire him, I won't have a long nap.</p>
-
-                    <p><span>Please,  </span>
-                    <a
-                      href="mailto:egulti4128@conestogac.on.ca"
-                      style={{
-                        textDecoration: 'none',
-                        color: 'Blue',
-                        fontWeight: 'bold'
-                      }}
-                    >
-                      HIRE HIM
-                    </a>
-                    <span>, and Let me have loooooong nap all afternoon .</span>
-                  </p>
-                </div>
-            </div>
-
-
-    
-
-            
-            <div className="doggoContents" style={{
-                paddingBottom: '250px',
-                fontSize: '40px',
-                fontWeight: 'bolder',
-                fontFamily: 'Courier New, monospace',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                textAlign: 'center'
-            }}>
-                <p>
-                    <h3>Look at me, if he doesn’t have a job, he’ll be bothering me 😜😒</h3>
+                <p style={{ fontSize: '20px', textAlign: 'center' }}>
+                    Meet Aaron, my adorable 1.5-year-old pup who loves to have fun and take long naps! He's my loyal companion and keeps me company throughout my adventures. 🐾
                 </p>
+            </div>
 
+            {/* Fun Message from Aaron */}
+            <div className="dogMsg" style={{ fontSize: '25px', fontFamily: 'Courier New, monospace', textAlign: 'center', lineHeight: '1.5', marginBottom: '50px' }}>
+                <p>Yo, what's up 🤗? I'm Aaron, a year-and-a-half-old dog who's still a playful puppy 🥰. I live with my best friend Ermiyas, but let me tell you, he takes up way too much of my space!</p>
+                <p>If you don’t hire him, I won’t be able to enjoy my long afternoon naps 😒</p>
+                <p>Please, <a href="mailto:egulti4128@conestogac.on.ca" style={{ color: 'blue', fontWeight: 'bold' }}>HIRE HIM</a>, and let me sleep peacefully all day long. 😴</p>
+            </div>
+
+            {/* Fun Video Section */}
+            <div style={{ fontSize: '30px', fontWeight: 'bolder', fontFamily: 'Courier New, monospace', textAlign: 'center', marginBottom: '50px' }}>
+                <h3>Look at me... If Ermiyas doesn't get a job, I’ll be the one getting bored! 😜</h3>
                 <iframe
                     width="600"
                     height="400"
                     src={dogMovie}
-                    title="Dog video"
+                    title="Dog Video"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    style={{
-                        border: '5px solid #ccc',
-                        borderRadius: '15px',
-                        boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.3)',
-                        marginTop: '20px'
-                    }}
+                    style={{ border: '5px solid #ccc', borderRadius: '15px', boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.3)', marginTop: '20px' }}
                 ></iframe>
             </div>
 
-            <div style={{
-                display: 'flex',
-                flexDirection: 'column',
-                paddingLeft: '25px',
-                paddingBottom: '250px',
-                fontSize: '40px',
-                fontWeight: 'Bolder',
-                fontFamily: 'Courier New, monospace',
-                alignItems: 'center' 
-            }}>
-                <p>
-                    If you want to keep in touch with me, Follow my Instagram. And Forget what I said. I do love Ermiyas. 
-                </p>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img 
-                        src={dogPic1} 
-                        alt="A cute dog"  
-                        style={{ width: '400px', height: '600px', marginRight: '100px', marginLeft: '5px', marginTop: '25px' }}
-                    />
-                    <img 
-                        src={dogPic2} 
-                        alt="A cute dog"  
-                        style={{ width: '400px', height: '600px', marginRight: '25px', marginLeft: '5px', marginTop: '25px' }}
-                    />
-                </div>
+            {/* Image Gallery */}
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginBottom: '50px' }}>
+                <img 
+                    src={dogPic1} 
+                    alt="Cute Dog"  
+                    style={{ width: '400px', height: '600px', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }}
+                />
+                <img 
+                    src={dogPic2} 
+                    alt="Cute Dog"  
+                    style={{ width: '400px', height: '600px', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }}
+                />
             </div>
 
-
-
-            {/* calling footer component for the webste footer contents */}
-            <FooterComponents/>
+            {/* Footer */}
+            <FooterComponents />
         </div>
     );
 }
