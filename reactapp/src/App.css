@@ -284,4 +284,33 @@ font-weight: bolder;
     font-size: 25px;
     color: black;
     }
-    
+
+    /* Animation for "Close" Button */
+.shake-animation {
+  animation: shake 0.5s ease-in-out;
+}
+
+
+/* Adjust menu button */
+.menuBtn {
+  color: black;
+  font-size: 60px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.menuBtn:hover {
+  color: #cc0077;
+  transform: scale(1.1);
+}
+
+/* Styling for Tab Link Button */
+.tablink {
+  cursor: pointer;
+}
+
+/* Hover effect for Tab Link Button */
+.tablink:hover {
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform: scale(1.09);
+}

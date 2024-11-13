@@ -1,5 +1,5 @@
 // WorkExprience.js
-import React, {useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import HeaderComponents from './Header';
 import FooterComponents from './Footer';
@@ -27,43 +27,6 @@ import blackDudeImage from '../images/workPage/blackDudeImage.png';
 import youngBlackMan from '../images/workPage/youngBlackMan.png'; 
 
 function WorkExpriencePage() {
-    
-  useEffect(() => {
-    // Event handler to trigger download
-    const handleDownload = (pdfUrl, fileName) => {
-      const link = document.createElement("a");
-      link.href = pdfUrl;
-      link.download = fileName;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    };
-
-    // Adding event listeners to both buttons
-    const downloadButton = document.getElementById("downloadButton");
-    const downloadButton1 = document.getElementById("downloadButton1");
-
-    if (downloadButton) {
-      downloadButton.addEventListener("click", () => 
-        handleDownload("/ErmiyasResume.pdf", "ErmiyasResume.pdf")
-      );
-    }
-    if (downloadButton1) {
-      downloadButton1.addEventListener("click", () => 
-        handleDownload("/StudentAchievement.pdf", "StudentAchievement.pdf")
-      );
-    }
-
-    // Cleanup the event listeners when component unmounts
-    return () => {
-      if (downloadButton) {
-        downloadButton.removeEventListener("click", handleDownload);
-      }
-      if (downloadButton1) {
-        downloadButton1.removeEventListener("click", handleDownload);
-      }
-    };
-  }, []);
 
   return (
     <div className="Exprience">
@@ -200,62 +163,76 @@ function WorkExpriencePage() {
         style={{ paddingLeft: '550px', width: '500px', height: '400px' }}
       />
 
-    <div
-    style={{
-        paddingTop: '75px',
-        paddingBottom: '75px',
-        paddingLeft: '250px',
-        fontFamily: "'Courier New', monospace",
-        fontWeight: 'bolder',
-        fontSize: '35px',
-    }}
-    >
-    <button
-        id="downloadButton"
+        <div
         style={{
-        display: 'block', 
-        fontSize: '35px',
-        color: 'blue',
-        fontWeight: 'bold',
-        fontFamily: "'Courier New', monospace",
-        boxShadow: '1px 5px 5px -3px green',
-        textDecoration: 'none',
-        padding: '10px 20px',
-        marginBottom: '20px', 
-        backgroundColor: '#C6B1F3',
-        border: 'none',
-        borderRadius: '5px',
-        cursor: 'pointer',
+            display: 'flex',
+            paddingTop: '75px',
+            paddingBottom: '75px',
+            paddingLeft: '250px',
+            fontFamily: "'Courier New', monospace",
+            fontWeight: 'bolder',
+            fontSize: '35px',
+            flexDirection: 'column',
         }}
-    >
-    Resume
-    </button>
+        >
+        {/* Open the PDF in a new tab instead of downloading */}
+        <a href="/ErmiyasResume.pdf" target="_blank" rel="noopener noreferrer">
+            <p
+            style={{
+                display: 'inline-block',
+                fontSize: '35px',
+                color: 'blue',
+                fontWeight: 'bold',
+                fontFamily: "'Courier New', monospace",
+                boxShadow: '1px 5px 5px -3px green',
+                textDecoration: 'none',
+                padding: '10px 20px',
+                marginBottom: '20px',
+                backgroundColor: '#C6B1F3',
+                borderRadius: '5px',
+                cursor: 'pointer',
+            }}
+            >
+            Resume
+            </p>
+        </a>
 
-    <button
-        id="downloadButton2"
-        style={{
-        display: 'block', 
-        fontSize: '35px',
-        color: 'blue',
-        fontWeight: 'bold',
-        fontFamily: "'Courier New', monospace",
-        boxShadow: '1px 5px 5px -3px green',
-        textDecoration: 'none',
-        padding: '10px 20px',
-        marginBottom: '20px', 
-        backgroundColor: '#C6B1F3',
-        border: 'none',
-        borderRadius: '5px',
-        cursor: 'pointer',
-        }}
-    >
-    Achievement Paper
-    </button>
+        <a href="/StudentAchievement.pdf" target="_blank" rel="noopener noreferrer">
+            <p
+            style={{
+                display: 'inline-block',
+                fontSize: '35px',
+                color: 'blue',
+                fontWeight: 'bold',
+                fontFamily: "'Courier New', monospace",
+                boxShadow: '1px 5px 5px -3px green',
+                textDecoration: 'none',
+                padding: '10px 20px',
+                marginBottom: '20px',
+                backgroundColor: '#C6B1F3',
+                borderRadius: '5px',
+                cursor: 'pointer',
+            }}
+            >
+            Achievement Paper
+            </p>
+        </a>
 
-    <p><Link to="/Projects" style={{ color:'blue',boxShadow:" 1px 5px 5px -3px green",textDecoration: 'none',}}>More Of My Projects </Link></p>
+        <p>
+            <Link
+            to="/Projects"
+            style={{
+                color: 'blue',
+                boxShadow: '1px 5px 5px -3px green',
+                textDecoration: 'none',
+            }}
+            >
+            More Of My Projects
+            </Link>
+        </p>
+        </div>
 
     
-    </div>
 
       {/* passing the props to the header component(func) */}
       <FooterComponents hireMeIcon={hireMe} logo={logoIcon} />
