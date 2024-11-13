@@ -81,7 +81,7 @@ function HobbiesPage() {
                 <div className="hobby-item">
                     <img src="path/to/reading-image.jpg" alt="Reading" className="hobby-image" />
                     <div className="hobby-description">
-                        <h3>Animals </h3>
+                        <h3>Spending Time With Dogs </h3>
                         <p>
                             Spending time with my dog, Aaron, is one of my favourite hobbies. 
                             My dog brings so much joy into my life, and we have a special connection. 
@@ -89,17 +89,19 @@ function HobbiesPage() {
                         </p>
                     </div>
 
-                    <div className="hobby-item">
+                    
+                </div>
+
+                <div className="hobby-item">
                     <img src="path/to/reading-image.jpg" alt="Reading" className="hobby-image" />
                     <div className="hobby-description">
-                        <h3>Animals </h3>
+                        <h3>Musics  </h3>
                         <p>
-                            Spending time with my dog, Aaron, is one of my favourite hobbies. 
-                            My dog brings so much joy into my life, and we have a special connection. 
-                            Visit his page and see How wonderful he is. 
+                            Music is another hobby I genuinely enjoy. Whether listening to my favourite songs, exploring new genres, 
+                            or just unwinding with a good melody, music can calm the mind and spark creativity. 
+                            It’s a perfect way to express emotions and connect with others, making it an essential part of my free time.
                         </p>
                     </div>
-                </div>
                 </div>
             </div>
 

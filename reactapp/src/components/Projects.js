@@ -107,16 +107,17 @@ function ProjectsPage() {
                 <p>in Progress</p>
             </h1>
 
-            <ProjectBox 
-                icon={djangoIcon} 
-                title="Laptop Rental Kiosk Web Application"
-                description="Tech Stack: React, Python Django, MySQL, GitHub"
-                showTechStack={showTechStack}
-                handleClick={handleClick}
-                className="centered-project-box"  
-            />
+            <div  className="centered-project-box">
 
-
+                <ProjectBox 
+                    icon={djangoIcon} 
+                    title="Laptop Rental Kiosk Web Application"
+                    description="Tech Stack: React, Python Django, MySQL, GitHub"
+                    showTechStack={showTechStack}
+                    handleClick={handleClick}  
+                />
+            </div>
+            
             <FooterComponents/>
         </div>
     );
