@@ -12,8 +12,10 @@ import SocialMediaIconsDisplay from './socialMediaDisplay';
 import coding from '../images/hobbiesPage/coding.png';
 import running from '../images/hobbiesPage/running.png';
 import movies from '../images/hobbiesPage/movies.png';
-import doggg from '../images/hobbiesPage/dog.png';
+import doggg from '../images/hobbiesPage/ermiAndAaron2.png';
 import musika from '../images/hobbiesPage/music.png';
+import coffee from '../images/hobbiesPage/coffee.mp4';
+import food from '../images/hobbiesPage/food.png';
 
 import './HobbiesPage.css'; // Make sure to add some CSS for styling
 
@@ -48,7 +50,7 @@ function HobbiesPage() {
             </div>
 
             <div className="hobbies-list">
-                <h2>What I Love Doing</h2>
+                <p style={{fontSize:'30px', color:'purple', fontWeight:'bolder'}}>What I Love Doing</p>
                 
                 <div className="hobby-item">
                     <img src={coding} alt="Coding" className="hobby-image" />
@@ -93,18 +95,43 @@ function HobbiesPage() {
                             Visit his page and see How wonderful he is. 
                         </p>
                     </div>
-
-                    
                 </div>
 
                 <div className="hobby-item">
                     <img src={musika} alt="musika" className="hobby-image" />
                     <div className="hobby-description">
-                        <h3>Musics  </h3>
+                        <h3>Musics </h3>
                         <p>
                             Music is another hobby I genuinely enjoy. Whether listening to my favourite songs, exploring new genres, 
                             or just unwinding with a good melody, music can calm the mind and spark creativity. 
                             It’s a perfect way to express emotions and connect with others, making it an essential part of my free time.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="hobby-item">
+                    <img src={food} alt="food" className="hobby-image" />
+                    <div className="hobby-description">
+                        <h3>Preparing Food </h3>
+                        <p>
+                            My other favourite thing to do is prepare meals. 
+                            Either traditional foods or new recipes, I enjoy making delicious foods and enjoy their taste, 
+                            which gives me a calm mind and quality time. I often prepare my meals, 
+                            and the process of preparing meals is like a hobby for me. 
+                        </p>
+                    </div>
+                </div>
+                <div className="hobby-item">
+                    <iframe src={coffee} alt="Ethiopian Coffee Ceremony" className="hobby-image"> </iframe>
+                    <div className="hobby-description">
+                        <h3>Preparing an Ethiopian Coffee</h3>
+                        <p>
+                            One of my favourite Hobbies is making Ethiopian coffee. 
+                            The ritual brings me back to my Ethiopian roots and helps me reconnect to my culture. 
+                            The process of roasting the coffee bean and brewing and pouring it gives me a sense of relaxation, 
+                            and the Ethiopian coffee ceremony's flavour and smell make it unique from other cultural coffee ceremonies. 
+                            This ritual is about preparing the perfect cup and sharing an experience, 
+                            as the preparation in history and often brings people close friends together in a communal setting.
                         </p>
                     </div>
                 </div>
