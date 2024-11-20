@@ -53,10 +53,10 @@ function HomePage() {
               // space btwn letters verticallyyy 
               marginTop: '25px',
               marginLeft: '500px',
-              color: "#2B3A67",
+              color: "Black",
               fontweight:"Bold",
               fontSize: "30px",
-              fontfamily: "Courier New, monospace"
+              fontfamily: "Arial, monospace"
             }}
           >
             {letter}
@@ -100,11 +100,13 @@ function HomePage() {
 
       <div>
       
-      <p style={{paddingLeft:"80px", fontWeight: "bolder", textAlign: "left", color: "#2B3A67", fontSize: "40px", fontFamily: "Courier New, monospace" }}>
-          Hi, I am Ermiyas. 
+      <p style={{paddingLeft:"80px", textAlign: "left", color: "Black", fontSize: "50px", fontFamily: "Arial, monospace" }}>
+          Hi, My name is 
+          <p><b>Ermiyas.</b></p>
       </p>
-      <p style={{paddingLeft:"80px",textAlign: "lrgy", color: "#2B3A67", fontSize: "20px", fontFamily: "Courier New, monospace" }}>
-        I'm an independent creative developer from Kitchener, Ontario.
+      <p style={{paddingLeft:"80px",textAlign: "lrgy", color: "Black", fontSize: "25px", fontFamily: "Arial, monospace" }}>
+        I'm an <b>independent and creative developer </b>from Kitchener, Ontario,
+        <p> <b> with a quick learning ability </b>to adapt and innovate.</p>
       </p>
 
 
@@ -131,8 +133,8 @@ function HomePage() {
         marginTop: '30px',
         marginRight: '30px',
         paddingLeft:"80px",
-        fontFamily: "Courier New, monospace",
-        color: "#2B3A67"}}
+        fontFamily: "Arial, monospace",
+        color: "Black"}}
               >
                 <span> 
                   <p> I’ve been passionate about technology since I was a teenager.</p> 
@@ -156,7 +158,7 @@ function HomePage() {
                   </p>
                 </span>
               </div>
-        <p style={{ fontweight:"Bold",color: "#2B3A67",fontSize: "30px",marginTop: '25px',marginLeft: '450px',fontFamily: "Courier New, monospace"}}>
+        <p style={{ fontweight:"Bold",color: "Black",fontSize: "30px",marginTop: '25px',marginLeft: '450px',fontFamily: "Arial, monospace"}}>
           SCROLL
         </p>
 
@@ -177,7 +179,7 @@ function HomePage() {
       </div>
 
      
-      <div style={{ fontweight:"Bold",color: "#2B3A67",fontSize: "20px",marginTop: '15px',marginLeft: '50px',fontFamily: "Courier New, monospace"}}>
+      <div style={{ fontweight:"Bold",color: "Black",fontSize: "20px",marginTop: '15px',marginLeft: '50px',fontFamily: "Arial, monospace"}}>
         <p><h1> Creating a bank web application was one of my most challenging but rewarding school projects.</h1></p>
         <p>As a second-year Software Engineering student, our Software Quality professor assigned us a project where we could design our web application, with a few options to choose from. It was a group project, </p>
         <p>so my partner Saje and I decided to build a banking application. We started by dividing our tasks and creating a project board using Trillo. </p>
@@ -188,7 +190,7 @@ function HomePage() {
         <p>Thank you for taking the time to check out our project!</p>
       </div>
 
-      <div style={{paddingLeft: '250px',fontFamily: "'Courier New', monospace ",fontWeight:'bolder',fontSize:'35px' }}>
+      <div style={{paddingLeft: '250px',fontFamily: "'Arial', monospace ",fontWeight:'bolder',fontSize:'35px' }}>
         <p><a href='https://github.com/srose0040/WealthWave'style={{boxShadow:" 1px 5px 5px -3px #F71B9D",textDecoration: 'none'}}> Git Hub Repo </a></p>
         <p><a href='https://wealthywave.Azurewebsites.net'style={{ boxShadow:" 1px 5px 5px -3px #F71B9D",textDecoration: 'none',}}>Wealthy Wave Bank </a></p>
         <p><Link to="/Projects" style={{ boxShadow:" 1px 5px 5px -3px #F71B9D",textDecoration: 'none',}}>More Of My Projects </Link></p>
@@ -204,7 +206,7 @@ function HomePage() {
       </div>
 
 
-      <div style = {{ fontweight:"Bold",color: "#2B3A67",fontSize: "20px",marginTop: '15px',marginLeft: '50px',fontFamily: "Courier New, monospace"}}>
+      <div style = {{ fontweight:"Bold",color: "Black",fontSize: "20px",marginTop: '15px',marginLeft: '50px',fontFamily: "Arial, monospace"}}>
 
         <p><h1>Recent Project...! Under PROCESS</h1></p>
         <p>While working at Conestoga College's Doon campus for my first co-op term, I developed an idea for improving the kiosk that loans laptops to students for a limited period.</p>
@@ -215,27 +217,18 @@ function HomePage() {
         <p>Assembly language seems to be an excellent tool for designing the software lights.</p>
       </div>
 
-      <div style={{paddingTop: '75px',paddingBottom: '75px',paddingLeft: '250px',fontFamily: "'Courier New', monospace ",fontWeight:'bolder',fontSize:'35px' }}>
+      <div style={{paddingTop: '75px',paddingBottom: '75px',paddingLeft: '250px',fontFamily: "'Arial', monospace ",fontWeight:'bolder',fontSize:'35px' }}>
         <p><a href='https://github.com/Ermiyas9/LaptopRentalKiosk'style={{boxShadow:" 1px 5px 5px -3px #F71B9D",textDecoration: 'none'}}> Git Hub Repo </a></p>
         <p><a href='https://wealthywave.Azurewebsites.net'style={{ boxShadow:" 1px 5px 5px -3px #F71B9D",textDecoration: 'none',}}>Laptop Rental Kiosk </a></p>
         <p><Link to="/Projects" style={{ boxShadow:" 1px 5px 5px -3px #F71B9D",textDecoration: 'none',}}>More Of My Projects </Link></p>
       </div>
 
-      <p style={{ fontweight:"Bold",color: "#2B3A67",fontSize: "30px",marginTop: '25px',marginLeft: '450px',fontFamily: "Courier New, monospace"}}>
-          SCROLL
-        </p>
-
-      {/* calling the function to display the animated scroll letters n */}
-      <ScrollDownAnimation /> 
-
-
-
-
-      <div className="footerNavLink"style={{ paddingTop: '150px',paddingBottom: '150px' }}>
+      <div className="footerNavLink" style={{ paddingTop: '150px', paddingBottom: '150px' }}>
         <Link to="/Projects" className="nav-link">Projects</Link>
         <Link to="/Hobbies" className="nav-link">Hobbies</Link>
-        <Link to="/Doggo" style={{ paddingLeft: '150px' }}>Meet Doggo</Link>
-      </div> 
+        <Link to="/Doggo"  className="nav-link">Meet Doggo</Link>
+      </div>
+
 
       {/* calling footer component for the webste footer contents */}
       <FooterComponents/>

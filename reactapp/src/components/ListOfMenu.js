@@ -22,7 +22,7 @@ function MenuLists() {
   return (
     <div id="menuButton">
       {/* Menu is open initially, button will display 'Close' */}
-      <div style={{paddingTop:'50px',paddingLeft:'50px',fontWeight: 'bold', fontFamily: 'Courier New, monospace', fontSize: '70px',alignSelf:'center'}}
+      <div style={{paddingTop:'50px',paddingLeft:'50px',fontWeight: 'bold', fontFamily: 'Arial, monospace', fontSize: '70px',alignSelf:'center'}}
         className={`tablink ${menuOpen ? "active" : ""}`}
         onClick={handleMenuToggle} 
       >
@@ -53,7 +53,7 @@ function MenuLists() {
           <li><Link to="/WorkExprience">MY EXPERIENCE</Link></li>
           <li><p className="listMsg">My Experience in Software Development </p></li>
           <li><Link to="/Hobbies">HOBBIES</Link></li>
-          <li><p className="listMsg" >Things I love to do to ... </p></li>
+          <li><p className="listMsg" >Things I love to do ... </p></li>
         </ul>
       </div>
     </div>

@@ -20,7 +20,7 @@ function AboutMePage() {
         alignItems: 'center',
         justifyContent: 'space-between',
         padding: '20px 80px',
-        backgroundColor:'#FFE6E0',
+        backgroundColor:'#FCDCF1',
         borderRadius: '15px',
         boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
         margin: '20px 50px',
@@ -31,13 +31,13 @@ function AboutMePage() {
         textAlign: 'left',
         color: '#2B3A67',
         fontSize: '40px',
-        fontFamily: 'Courier New, monospace',
+        fontFamily: 'Arial, monospace',
     };
 
     const subTextStyle = {
         color: '#2B3A67',
         fontSize: '20px',
-        fontFamily: 'Courier New, monospace',
+        fontFamily: 'Arial, monospace',
         maxWidth: '500px',
         marginTop: '15px',
     };
@@ -55,7 +55,7 @@ function AboutMePage() {
         color: "#2B3A67",
         fontWeight: "Bold",
         fontSize: "30px",
-        fontFamily: "Courier New, monospace",
+        fontFamily: "Arial, monospace",
         marginTop: '25px',
         display: 'flex',
         justifyContent: 'center',
@@ -65,7 +65,7 @@ function AboutMePage() {
         paddingLeft: "80px",
         color: "#2B3A67",
         fontSize: "20px",
-        fontFamily: "Courier New, monospace",
+        fontFamily: "Arial, monospace",
         lineHeight: "1.5",
         margin: "15px 0",
     };
@@ -86,7 +86,7 @@ function AboutMePage() {
                             color: "#2B3A67",
                             fontWeight: "Bold",
                             fontSize: "30px",
-                            fontFamily: "Courier New, monospace"
+                            fontFamily: "Arial, monospace"
                         }}
                     >
                         {letter}
@@ -128,7 +128,7 @@ function AboutMePage() {
             </div>
 
             <div style={{ textAlign: 'center', marginTop: '50px', paddingBottom: '250px' }}>
-                <Link to="/Projects" style={{ fontWeight:'Bold',color:'Blue',fontFamily: "Courier New, monospace",textDecoration: 'none', color: '#2B3A67', fontSize: '30px', fontWeight: 'bold' }}>
+                <Link to="/Projects" style={{ fontWeight:'Bold',color:'Blue',fontFamily: "Arial, monospace",textDecoration: 'none', color: '#2B3A67', fontSize: '30px', fontWeight: 'bold' }}>
                     Visit My Projects
                 </Link>
             </div>

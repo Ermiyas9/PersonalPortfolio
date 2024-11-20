@@ -12,13 +12,13 @@ function HeaderComponents({hireMeIcon,logo}) {
         <img src={logo} alt="Logo" />
       </div>
     {/* Hire Me Icon */}
-    <div className="hireMeIcon" style={{ display: 'flex', alignItems: 'center' }}>
+    <div className="hireMeIcon" style={{ display: 'flex', paddingRight:'80px'}}>
       <a href="mailto:egulti4128@conestogac.on.ca" className="hireMeIconLink" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
         <img
           src={hireMeIcon}
           alt="Hire Me Icon"
           className="hireMeIcon"
-          style={{ width: '100px', height: 'auto' }}
+          style={{ width: '80px', height: '70px' }}
         />
         <span style={{ marginLeft: '25px' }}>Hire Me</span>
       </a>

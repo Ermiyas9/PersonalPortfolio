@@ -31,7 +31,7 @@ function DoggoPage() {
             />
 
             {/* Introduction Section */}
-            <div className="doggoContents" style={{ fontSize:'40px', fontWeight:'bolder', fontFamily:'Courier New, monospace', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
+            <div className="doggoContents" style={{ fontSize:'40px', fontWeight:'bolder', fontFamily:'Arial, monospace', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
                 <h1>Hey There!</h1>
                 <img 
                     src={dogPic} 
@@ -44,14 +44,14 @@ function DoggoPage() {
             </div>
 
             {/* Fun Message from Aaron */}
-            <div className="dogMsg" style={{ fontSize: '25px', fontFamily: 'Courier New, monospace', textAlign: 'center', lineHeight: '1.5', marginBottom: '50px' }}>
+            <div className="dogMsg" style={{ fontSize: '25px', fontFamily: 'Arial, monospace', textAlign: 'center', lineHeight: '1.5', marginBottom: '50px' }}>
                 <p>Yo, what's up 🤗? I'm Aaron, a year-and-a-half-old dog who's still a playful puppy 🥰. I live with my best friend Ermiyas, but let me tell you, he takes up way too much of my space!</p>
                 <p>If you don’t hire him, I won’t be able to enjoy my long afternoon naps 😒</p>
                 <p>Please, <a href="mailto:egulti4128@conestogac.on.ca" style={{ color: 'blue', fontWeight: 'bold' }}>HIRE HIM</a>, and let me sleep peacefully all day long. 😴</p>
             </div>
 
             {/* Fun Video Section */}
-            <div style={{ fontSize: '30px', fontWeight: 'bolder', fontFamily: 'Courier New, monospace', textAlign: 'center', marginBottom: '50px' }}>
+            <div style={{ fontSize: '30px', fontWeight: 'bolder', fontFamily: 'Arial, monospace', textAlign: 'center', marginBottom: '50px' }}>
                 <h3>Look at me... If Ermiyas doesn't get a job, I’ll be the one getting bored! 😜</h3>
                 <iframe
                     width="600"
