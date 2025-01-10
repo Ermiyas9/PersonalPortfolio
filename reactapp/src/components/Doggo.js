@@ -2,7 +2,7 @@ import React from "react";
 import HeaderComponents from './Header';
 import FooterComponents from './Footer';
 import logoIcon from '../images/dogoPage/logoIcon.png';
-import hireMe from '../images/dogoPage/hireMeIcon.png';
+import hireMe from '../images/dogoPage/hiremeIcon.png';
 import instaImageIcon from '../images/dogoPage/instaIcon.png';
 import outlookImageIcon from '../images/dogoPage/outlookIcon.png';
 import emailIcon from '../images/dogoPage/gmailIcon.png';

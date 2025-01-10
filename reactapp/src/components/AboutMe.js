@@ -1,4 +1,4 @@
-// AboutMe.js
+// AboutMe.js page new git commit 
 import React from 'react';
 import "animate.css/animate.min.css"; 
 import { AnimatedOnScroll } from 'react-animated-css-onscroll';
