@@ -1,4 +1,4 @@
-// AboutMe.js page new git commit 
+// AboutMe.js page new git commit adding to git .. with new repcccocccc
 import React from 'react';
 import "animate.css/animate.min.css"; 
 import { AnimatedOnScroll } from 'react-animated-css-onscroll';
@@ -113,22 +113,28 @@ function AboutMePage() {
             <ScrollDownAnimation />
 
             <div style={{ padding: '0 80px' }}>
-                <p style={animatedTextStyle}>📚- I am a second-year student pursuing an Advanced Diploma in Software Engineering at Conestoga College.</p>
-                <p style={animatedTextStyle}>🫶🏾- After my first year, I secured a co-op spot, gaining real-world experience in software development.</p>
                 <p style={animatedTextStyle}>
-                    🫶🏾- If you'd like to collaborate, feel free to <a href="mailto:egulti4128@conestogac.on.ca" style={{ color: 'Blue', fontWeight: 'bold' }}>hire me</a>!
-                </p>
-                <p style={animatedTextStyle}>📚- Currently working in my co-op role as a Tech Representative at Conestoga College's Doon Campus.</p>
-                <p style={animatedTextStyle}>
-                    🧑🏾‍💻- My Conestoga experience revealed my passion for solving complex problems through creative solutions and systematic planning.
+                    <span role="img" aria-label="books">📚</span>- I am a second-year student pursuing an Advanced Diploma in Software Engineering at Conestoga College.
                 </p>
                 <p style={animatedTextStyle}>
-                    💻- Skilled in C, C#, C++, JavaScript, Python, and web development, I’ve completed various projects and excel in software testing and collaboration tools like GitHub. My experiences in Ethiopia, Kuwait, and Canada enrich my perspective and adaptability.
+                    <span role="img" aria-label="heart">🫶🏾</span>- After my first year, I secured a co-op spot, gaining real-world experience in software development.
+                </p>
+                <p style={animatedTextStyle}>
+                    <span role="img" aria-label="heart">🫶🏾</span>- If you'd like to collaborate, feel free to <a href="mailto:egulti4128@conestogac.on.ca" style={{ color: 'Blue', fontWeight: 'bold' }}>hire me</a>!
+                </p>
+                <p style={animatedTextStyle}>
+                    <span role="img" aria-label="books">📚</span>- Currently working in my co-op role as a Tech Representative at Conestoga College's Doon Campus.
+                </p>
+                <p style={animatedTextStyle}>
+                    <span role="img" aria-label="man-technologist">🧑🏾‍💻</span>- My Conestoga experience revealed my passion for solving complex problems through creative solutions and systematic planning.
+                </p>
+                <p style={animatedTextStyle}>
+                    <span role="img" aria-label="laptop">💻</span>- Skilled in C, C#, C++, JavaScript, Python, and web development, I’ve completed various projects and excel in software testing and collaboration tools like GitHub. My experiences in Ethiopia, Kuwait, and Canada enrich my perspective and adaptability.
                 </p>
             </div>
 
             <div style={{ textAlign: 'center', marginTop: '50px', paddingBottom: '250px' }}>
-                <Link to="/Projects" style={{ fontWeight:'Bold',color:'Blue',fontFamily: "Arial, monospace",textDecoration: 'none', color: '#2B3A67', fontSize: '30px', fontWeight: 'bold' }}>
+                <Link to="/Projects" style={{ fontWeight:'Bold',color:'Blue',fontFamily: "Arial, monospace",textDecoration: 'none',  fontSize: '30px' }}>
                     Visit My Projects
                 </Link>
             </div>

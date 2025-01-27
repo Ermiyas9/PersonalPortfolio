@@ -17,11 +17,11 @@ import emailIcon from '../images/homePage/gmailIcon.png';
 import instaImageIcon from '../images/homePage/instaIcon.png';
 import SocialMediaIconsDisplay from './socialMediaDisplay'; 
 
-// this importt wll be for animated stuff and animate library
+// this importt wll be for animated stuff and animate library ff
 import "animate.css/animate.min.css"; 
 import { AnimatedOnScroll } from 'react-animated-css-onscroll';
 import '../App.css';
-import { AlignHorizontalCenter } from '@mui/icons-material';
+// import { AlignHorizontalCenter } from '@mui/icons-material';
 
 function HomePage() {
 

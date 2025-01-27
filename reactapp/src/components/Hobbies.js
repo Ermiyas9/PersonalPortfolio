@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeaderComponents from './Header';
 import FooterComponents from './Footer';
 
@@ -78,7 +78,7 @@ function HobbiesPage() {
                     </div>
 
                     <div className="hobby-item">
-                        <img src={movies} alt="Movies Image" className="hobby-image" />
+                        <img src={movies} alt='love watching movies' className="watching" />
                         <div className="hobby-description">
                             <h3>Watching Movies</h3>
                             <p>
@@ -88,7 +88,7 @@ function HobbiesPage() {
                     </div>
 
                     <div className="hobby-item">
-                        <img src={doggg} alt="dogg image" className="hobby-image" />
+                        <img src={doggg}  alt='spending time with dog' className="hobby-image" />
                         <div className="hobby-description">
                             <h3>Spending Time With Dogs </h3>
                             <p>
@@ -124,7 +124,7 @@ function HobbiesPage() {
                         </div>
                     </div>
                     <div className="hobby-item">
-                        <iframe src={coffee} alt="Ethiopian Coffee Ceremony" className="hobby-image"> </iframe>
+                        <iframe src={coffee} className="hobby-image" title="Ethiopian Coffee" />
                         <div className="hobby-description">
                             <h3>Preparing an Ethiopian Coffee</h3>
                             <p>

@@ -33,7 +33,7 @@ function MenuLists() {
       <div className="simpsonImage">
         <img 
           src={simpsonImage} 
-          alt="Homer Simpson Image" 
+          alt="simsonnns"
         />
       </div>
 

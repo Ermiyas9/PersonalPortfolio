@@ -48,7 +48,7 @@ function WorkExpriencePage() {
       />
 
       <div>
-        <p className="titles"> 💻 Technical Skills </p>
+        <p className="titles"> <span role="img" aria-label="computer emoji">💻</span> Technical Skills </p>
         <p className="subTitles">Programming Languages / Frameworks</p>
 
         <img
@@ -83,28 +83,28 @@ function WorkExpriencePage() {
       <div>
         <img
           src={reactIcon}
-          alt="Content"
+          alt="Content1"
           className="contentImage"
           style={{ paddingTop: '5', paddingRight: '5', paddingLeft: '5', width: '50px', height: '50px' }}
         />
 
         <img
           src={pythonIcon}
-          alt="Content"
+          alt="Content2"
           className="contentImage"
           style={{ paddingTop: '5', paddingRight: '5', paddingLeft: '5', width: '50px', height: '50px' }}
         />
 
         <img
           src={androidIcon}
-          alt="Content"
+          alt="Content3"
           className="contentImage"
           style={{ paddingTop: '5', paddingRight: '5', paddingLeft: '5', width: '50px', height: '50px' }}
         />
 
         <img
           src={phpIcon}
-          alt="Content"
+          alt="Content4"
           className="contentImage"
           style={{ paddingTop: '5', paddingRight: '5', paddingLeft: '5', width: '50px', height: '50px' }}
         />
@@ -113,57 +113,60 @@ function WorkExpriencePage() {
       <div>
         <img
           src={djangoIcon}
-          alt="Content"
+          alt="Content5"
           className="contentImage"
           style={{ paddingTop: '15', paddingRight: '5', paddingLeft: '5', width: '50px', height: '50px' }}
         />
 
         <img
           src={htmlIcon}
-          alt="Content"
+          alt="Content6"
           className="contentImage"
           style={{ paddingTop: '5', paddingRight: '5', paddingLeft: '5', width: '50px', height: '50px' }}
         />
 
         <img
           src={mySqlIcon}
-          alt="Content"
+          alt="Content7"
           className="contentImage"
           style={{ paddingTop: '5', paddingRight: '5', paddingLeft: '5', width: '50px', height: '50px' }}
         />
 
         <img
           src={sqlIcon}
-          alt="Content"
+          alt="Content8"
           className="contentImage"
           style={{ paddingTop: '5', paddingRight: '5', paddingLeft: '5', width: '50px', height: '50px' }}
         />
       </div>
 
       <div>
-        <p className="titles"> 🔍 Learning Skills </p>
+        <p className="titles"> <span role="img" aria-label="Table tennis">🔍</span> Learning Skills </p>
         <p className="subTitles">From Documentation and Online Recourses </p>
-        <p className="subSecTitle" style={{ paddingLeft: '150px' }}>📚 Succeed in solving code issues and bugs efficiently</p>
-        <p className="subSecTitle" style={{ paddingLeft: '150px' }}>📚 Draw on a quick learning ability to navigate documentation, Stack Overflow, and other online resources easily</p>
-        <p className="subSecTitle" style={{ paddingLeft: '150px' }}>📚 Troubleshoot complex problems and optimize code effectively</p>
-        <p className="subSecTitle" style={{ paddingLeft: '150px' }}>📚 Find solutions fast to keep projects moving forward smoothly</p>
+        <p className="subSecTitle" style={{ paddingLeft: '150px' }}> <span role="img" aria-label="books maybe">📚</span>Succeed in solving code issues and bugs efficiently</p>
+        <p className="subSecTitle" style={{ paddingLeft: '150px' }}> <span role="img" aria-label="books maybe">📚</span> Draw on a quick learning ability to navigate documentation, Stack Overflow, and other online resources easily</p>
+        <p className="subSecTitle" style={{ paddingLeft: '150px' }}> <span role="img" aria-label="books maybe">📚</span> Troubleshoot complex problems and optimize code effectively</p>
+        <p className="subSecTitle" style={{ paddingLeft: '150px' }}> <span role="img" aria-label="books maybe">📚</span>  Find solutions fast to keep projects moving forward smoothly</p>
       </div>
 
-      <p className="titles"> 📝 Education </p>
+      <p className="titles"><span role="img" aria-label="books maybe">📝 </span>Education </p>
       <p className="subTitles">Advanced Diploma in Software Engineering Candidate</p>
-      <p style={{ paddingLeft: '150px' }} className="subSecTitle"> 🎓 Conestoga College, Waterloo | Sep. 2022 – Present | GPA 3.81</p>
+      <p style={{ paddingLeft: '150px' }} className="subSecTitle"> <span role="img" aria-label="graduation icon">🎓</span> Conestoga College, Waterloo | Sep. 2022 – Present | GPA 3.81</p>
       <p className="subTitles">Diploma in Information Communication Technology</p>
-      <p style={{ paddingLeft: '150px' }} className="subSecTitle"> 🎓 Royal University College—Nazareth Ethiopia and Asella TVET Institute | Sep 2007 – July 2010 | GPA 3.85</p>
+      <p style={{ paddingLeft: '150px' }} className="subSecTitle"><span role="img" aria-label="graduation icon">🎓</span> Royal University College—Nazareth Ethiopia and Asella TVET Institute | Sep 2007 – July 2010 | GPA 3.85</p>
 
-      <p className="titles"> 🚀 Technical Experience </p>
+      <p className="titles"><span role="img" aria-label="graduation icon">🚀</span>Technical Experience </p>
       <p className="subTitles"> Career Highlights in Technical & Client-Focused Roles</p>
-      <p className="subSecTitle" style={{ paddingLeft: '150px' }}>🌟 Tech Representative, Conestoga College (Co-op) | Sep 2024 – Present</p>
-      <p className="subSecTitle" style={{ paddingLeft: '150px' }}>🌟 Warehouse Worker, Grand River Personnel, Kitchener, ON | 2023</p>
-      <p className="subSecTitle" style={{ paddingLeft: '150px' }}>🌟 Crew Member, McDonald’s, Kitchener, ON | 2020 – 2021</p>
-      <p className="subSecTitle" style={{ paddingLeft: '150px' }}>🌟 Customer Service & Delivery Driver, Carriage & Talabat Delivery Company | 2016 - 2019</p>
-      <p className="subSecTitle" style={{ paddingLeft: '150px' }}>🌟 Salesperson, Avenue Mall, Kuwait | 2014 - 2015</p>
-      <p className="subSecTitle" style={{ paddingLeft: '150px' }}>🌟 IT Instructor, National College Addis Abeba, Ethiopia | 2012</p>
-      <p className="subSecTitle" style={{ paddingLeft: '150px' }}>🌟 Assistant IT Instructor, Rehoboth Medical College Asella, Ethiopia | 2010 – 2011</p>
+      <p className="subSecTitle" style={{ paddingLeft: '150px' }}> <span role="img" aria-label="yellow star emoji">🌟</span>Tech Representative, Conestoga College (Co-op) | Sep 2024 – Present</p>
+      <p className="subSecTitle" style={{ paddingLeft: '150px' }}> <span role="img" aria-label="yellow star emoji">🌟</span> Warehouse Worker, Grand River Personnel, Kitchener, ON | 2023</p>
+      <p className="subSecTitle" style={{ paddingLeft: '150px' }}> <span role="img" aria-label="yellow star emoji">🌟</span> Crew Member, McDonald’s, Kitchener, ON | 2020 – 2021</p>
+      <p className="subSecTitle" style={{ paddingLeft: '150px' }}> <span role="img" aria-label="yellow star emoji">🌟</span>Customer Service & Delivery Driver, Carriage & Talabat Delivery Company | 2016 - 2019</p>
+      <p className="subSecTitle" style={{ paddingLeft: '150px' }}> <span role="img" aria-label="yellow star emoji">🌟</span> Salesperson, Avenue Mall, Kuwait | 2014 - 2015</p>
+      <p className="subSecTitle" style={{ paddingLeft: '150px' }}> <span role="img" aria-label="yellow star emoji">🌟</span>IT Instructor, National College Addis Abeba, Ethiopia | 2012</p>
+      <p className="subSecTitle" style={{ paddingLeft: '150px' }}> <span role="img" aria-label="yellow star emoji">🌟</span>Assistant IT Instructor, Rehoboth Medical College Asella, Ethiopia | 2010 – 2011</p>
+      <p className="subSecTitle" style={{ paddingLeft: '150px' }}>
+       <span role="img" aria-label="star emoji">🌟</span> Assistant IT Instructor, Rehoboth Medical College Asella, Ethiopia | 2010 – 2011
+</p>
 
       <img
         src={youngBlackMan}
