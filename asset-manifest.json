@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/PersonalPortfolio/static/css/main.02105932.chunk.css",
-    "main.js": "/PersonalPortfolio/static/js/main.95ac4d24.chunk.js",
-    "main.js.map": "/PersonalPortfolio/static/js/main.95ac4d24.chunk.js.map",
-    "runtime~main.js": "/PersonalPortfolio/static/js/runtime~main.7462302f.js",
-    "runtime~main.js.map": "/PersonalPortfolio/static/js/runtime~main.7462302f.js.map",
+    "main.js": "/PersonalPortfolio/static/js/main.e28e06bf.chunk.js",
+    "main.js.map": "/PersonalPortfolio/static/js/main.e28e06bf.chunk.js.map",
+    "runtime-main.js": "/PersonalPortfolio/static/js/runtime-main.068bb9bf.js",
+    "runtime-main.js.map": "/PersonalPortfolio/static/js/runtime-main.068bb9bf.js.map",
     "static/css/2.4880e89e.chunk.css": "/PersonalPortfolio/static/css/2.4880e89e.chunk.css",
-    "static/js/2.c23f9cb8.chunk.js": "/PersonalPortfolio/static/js/2.c23f9cb8.chunk.js",
-    "static/js/2.c23f9cb8.chunk.js.map": "/PersonalPortfolio/static/js/2.c23f9cb8.chunk.js.map",
+    "static/js/2.710e4b89.chunk.js": "/PersonalPortfolio/static/js/2.710e4b89.chunk.js",
+    "static/js/2.710e4b89.chunk.js.map": "/PersonalPortfolio/static/js/2.710e4b89.chunk.js.map",
     "index.html": "/PersonalPortfolio/index.html",
-    "precache-manifest.51bc5aac1297a162ce02dda092854b80.js": "/PersonalPortfolio/precache-manifest.51bc5aac1297a162ce02dda092854b80.js",
+    "precache-manifest.c53bae5cac50aca491aaa2aff356e58c.js": "/PersonalPortfolio/precache-manifest.c53bae5cac50aca491aaa2aff356e58c.js",
     "service-worker.js": "/PersonalPortfolio/service-worker.js",
     "static/css/2.4880e89e.chunk.css.map": "/PersonalPortfolio/static/css/2.4880e89e.chunk.css.map",
     "static/css/main.02105932.chunk.css.map": "/PersonalPortfolio/static/css/main.02105932.chunk.css.map",
+    "static/js/2.710e4b89.chunk.js.LICENSE.txt": "/PersonalPortfolio/static/js/2.710e4b89.chunk.js.LICENSE.txt",
     "static/media/Aaron1.JPG": "/PersonalPortfolio/static/media/Aaron1.357719d5.JPG",
     "static/media/Aaron2.JPG": "/PersonalPortfolio/static/media/Aaron2.f7592399.JPG",
     "static/media/Aaron3.JPG": "/PersonalPortfolio/static/media/Aaron3.57aa8c6e.JPG",
@@ -32,5 +33,12 @@
     "static/media/simpson.png": "/PersonalPortfolio/static/media/simpson.9ad6944f.png",
     "static/media/subBuzz.png": "/PersonalPortfolio/static/media/subBuzz.4aa375e5.png",
     "static/media/youngBlackMan.png": "/PersonalPortfolio/static/media/youngBlackMan.ed251eb5.png"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.068bb9bf.js",
+    "static/css/2.4880e89e.chunk.css",
+    "static/js/2.710e4b89.chunk.js",
+    "static/css/main.02105932.chunk.css",
+    "static/js/main.e28e06bf.chunk.js"
+  ]
 }
