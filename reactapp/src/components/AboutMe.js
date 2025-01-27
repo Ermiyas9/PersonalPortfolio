@@ -1,4 +1,4 @@
-// AboutMe.js page new git commit adding to git .. with new repcccocccc
+// AboutMe.js page new git commit adding toddd git .. with new repcccocccc
 import React from 'react';
 import "animate.css/animate.min.css"; 
 import { AnimatedOnScroll } from 'react-animated-css-onscroll';
