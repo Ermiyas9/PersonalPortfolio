@@ -1,0 +1,17 @@
+{
+    "files.readonlyInclude": {
+        "{**/.c4z/.extsrcs/*.PROTSYM.cbl,**/.c4z/.extsrcs/*.PROTSYM.listing}": true
+    },
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/980eef15-55d6-4597-81bb-685b82adb15c/resourceGroups/Wealth_group/providers/Microsoft.Web/sites/ermiyasg",
+    "appService.deploySubpath": ".",
+    "azureFunctions.deploySubpath": ".",
+    "azureFunctions.postDeployTask": "npm install (functions)",
+    "azureFunctions.projectLanguage": "JavaScript",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "npm prune (functions)"
+}
